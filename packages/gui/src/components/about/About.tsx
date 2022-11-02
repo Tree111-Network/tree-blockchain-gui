@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
-
-import icon from '../../assets/img/chia_circle.svg';
+import icon from '../../assets/img/tree_icon.svg';
 
 const GlobalStyle = createGlobalStyle`
   body,
