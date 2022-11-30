@@ -1,6 +1,6 @@
-import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@chia/api-react';
-import { FormatLargeNumber, Flex, Card, StateColor, Table, LayoutDashboardSub } from '@chia/core';
-import { Status } from '@chia/icons';
+import { useGetLatestBlocksQuery, useGetUnfinishedBlockHeadersQuery } from '@tree/api-react';
+import { FormatLargeNumber, Flex, Card, StateColor, Table, LayoutDashboardSub } from '@tree/core';
+import { Status } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { Box, Tooltip, Typography } from '@mui/material';
 import { get } from 'lodash';

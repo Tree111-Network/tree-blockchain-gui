@@ -1,5 +1,5 @@
-import { Daemon, optionsForPlotter, defaultsForPlotter } from '@chia/api';
-import type { KeyringStatus, ServiceName, KeyData } from '@chia/api';
+import { Daemon, optionsForPlotter, defaultsForPlotter } from '@tree/api';
+import type { KeyringStatus, ServiceName, KeyData } from '@tree/api';
 
 import api, { baseQuery } from '../api';
 import onCacheEntryAddedInvalidate from '../utils/onCacheEntryAddedInvalidate';

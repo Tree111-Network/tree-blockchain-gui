@@ -1,5 +1,5 @@
-import { useCloseFullNodeConnectionMutation } from '@chia/api-react';
-import { ConfirmDialog, useOpenDialog } from '@chia/core';
+import { useCloseFullNodeConnectionMutation } from '@tree/api-react';
+import { ConfirmDialog, useOpenDialog } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 

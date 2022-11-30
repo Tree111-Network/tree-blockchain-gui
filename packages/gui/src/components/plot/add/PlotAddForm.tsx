@@ -1,6 +1,6 @@
-import { defaultPlotter, toBech32m, fromBech32m } from '@chia/api';
-import { useStartPlottingMutation, useCreateNewPoolWalletMutation } from '@chia/api-react';
-import { Back, useShowError, ButtonLoading, Flex, Form } from '@chia/core';
+import { defaultPlotter, toBech32m, fromBech32m } from '@tree/api';
+import { useStartPlottingMutation, useCreateNewPoolWalletMutation } from '@tree/api-react';
+import { Back, useShowError, ButtonLoading, Flex, Form } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import React, { useState, useEffect, useRef } from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';

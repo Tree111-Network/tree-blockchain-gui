@@ -1,6 +1,6 @@
-import { type NFTInfo } from '@chia/api';
-import { useLocalStorage } from '@chia/api-react';
-import { IconMessage, Loading, Flex, SandboxedIframe, Tooltip, usePersistState, useDarkMode } from '@chia/core';
+import { type NFTInfo } from '@tree/api';
+import { useLocalStorage } from '@tree/api-react';
+import { IconMessage, Loading, Flex, SandboxedIframe, Tooltip, usePersistState, useDarkMode } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import { NotInterested, Error as ErrorIcon } from '@mui/icons-material';
 import CloseSvg from '@mui/icons-material/Close';

@@ -1,5 +1,5 @@
-import { usePrefs } from '@chia/api-react';
-import { Flex, SettingsLabel, AlertDialog, useOpenDialog, FormatBytes } from '@chia/core';
+import { usePrefs } from '@tree/api-react';
+import { Flex, SettingsLabel, AlertDialog, useOpenDialog, FormatBytes } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Grid, Box, Button, Switch, FormGroup, FormControlLabel } from '@mui/material';
 import React from 'react';

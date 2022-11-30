@@ -1,6 +1,6 @@
-import { OfferSummaryRecord } from '@chia/api';
-import { useTakeOfferMutation } from '@chia/api-react';
-import { AlertDialog, chiaToMojo, useOpenDialog, useShowError } from '@chia/core';
+import { OfferSummaryRecord } from '@tree/api';
+import { useTakeOfferMutation } from '@tree/api-react';
+import { AlertDialog, treeToMojo, useOpenDialog, useShowError } from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
 import React from 'react';
@@ -31,7 +31,7 @@ export default function useAcceptOfferHook(): [AcceptOfferHook] {
     onUpdate: (accepting: boolean) => void,
     onSuccess: () => void
   ): Promise<void> {
-    const feeInMojos: BigNumber = fee ? chiaToMojo(fee) : new BigNumber(0);
+    const feeInMojos: BigNumber = fee ? treeToMojo(fee) : new BigNumber(0);
     const offeredUnknownCATs: string[] = Object.entries(offerSummary.offered)
       .filter(
         ([assetId]) =>

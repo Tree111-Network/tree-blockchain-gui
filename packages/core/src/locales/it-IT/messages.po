@@ -6,13 +6,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: it_IT\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: tree-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-10-24 18:14\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: tree-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: it\n"
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
@@ -69,7 +69,7 @@ msgstr "Copia negli appunti"
 
 #: src/screens/SelectKey/SelectKey.tsx:188
 msgid "Create a new private key"
-msgstr "Crea una nuova chiave privata"
+msgstr "Crea una nuova treeve privata"
 
 #: src/screens/SelectKey/SelectKeyItem.tsx:163
 #~ msgid "DANGER: permanently delete private key"
@@ -88,15 +88,15 @@ msgstr "Elimina"
 #: src/screens/SelectKey/SelectKey.tsx:210
 #: src/screens/SelectKey/SelectKey.tsx:82
 msgid "Delete all keys"
-msgstr "Elimina tutte le chiavi"
+msgstr "Elimina tutte le treevi"
 
 #: src/screens/SelectKey/WalletDeleteDialog.tsx:112
 msgid "Delete key {fingerprint}"
-msgstr "Elimina chiave {fingerprint}"
+msgstr "Elimina treeve {fingerprint}"
 
 #: src/screens/SelectKey/SelectKey.tsx:88
 msgid "Deleting all keys will permanently remove the keys from your computer, make sure you have backups. Are you sure you want to continue?"
-msgstr "Eliminando tutte le chiavi queste saranno rimosse definitivamente dal tuo computer, assicurati di avere un backup. Sei sicuro di voler continuare?"
+msgstr "Eliminando tutte le treevi queste saranno rimosse definitivamente dal tuo computer, assicurati di avere un backup. Sei sicuro di voler continuare?"
 
 #: src/screens/SelectKey/SelectKeyItem.tsx:124
 #~ msgid "Deleting the key will permanently remove the key from your computer, make sure you have backups. Are you sure you want to continue?"
@@ -142,7 +142,7 @@ msgstr ""
 
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:57
 msgid "Farmer public key:"
-msgstr "Chiave pubblica del farmer:"
+msgstr "Treeve pubblica del farmer:"
 
 #: src/components/Settings/SettingsApp.tsx:66
 msgid "Farming"
@@ -193,7 +193,7 @@ msgstr "Lingua"
 
 #: src/components/Settings/SettingsApp.tsx:80
 msgid "Light"
-msgstr "Chiaro"
+msgstr "Treero"
 
 #: src/screens/SelectKey/SelectKeyDetailDialog.tsx:48
 msgid "Loading details"
@@ -201,7 +201,7 @@ msgstr ""
 
 #: src/screens/SelectKey/SelectKey.tsx:124
 msgid "Loading list of the keys"
-msgstr "Caricamento lista delle chiavi"
+msgstr "Caricamento lista delle treevi"
 
 #: src/components/LayoutDashboard/LayoutDashboard.tsx:166
 #: src/components/LayoutDashboard/LayoutDashboard.tsx:191
@@ -235,7 +235,7 @@ msgstr "La nuova passphrase è la stessa della tua passphrase attuale"
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:83
 #: src/screens/SelectKey/SelectKeyDetailDialog.tsx:165
 msgid "No 24 word seed, since this key is imported."
-msgstr "Nessun seed di 24 parole, dato che la chiave è importata."
+msgstr "Nessun seed di 24 parole, dato che la treeve è importata."
 
 #: src/screens/SelectKey/WalletStatus.tsx:58
 msgid "Not Synced"
@@ -256,7 +256,7 @@ msgstr ""
 
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:65
 msgid "Pool public key:"
-msgstr "Chiave Pubblica Pool:"
+msgstr "Treeve Pubblica Pool:"
 
 #: src/screens/SelectKey/SelectKeyItem.tsx:142
 #~ msgid "Private key with public fingerprint {fingerprint}"
@@ -265,11 +265,11 @@ msgstr "Chiave Pubblica Pool:"
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:26
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:33
 msgid "Private key {fingerprint}"
-msgstr "Chiave privata {fingerprint}"
+msgstr "Treeve privata {fingerprint}"
 
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:41
 msgid "Private key:"
-msgstr "Chiave privata:"
+msgstr "Treeve privata:"
 
 #: src/screens/SelectKey/SelectKeyDetailDialog.tsx:84
 msgid "Public Key"
@@ -277,7 +277,7 @@ msgstr ""
 
 #: src/screens/SelectKey/SelectKeyDeleteKeyDialog.tsx:49
 msgid "Public key:"
-msgstr "Chiave pubblica:"
+msgstr "Treeve pubblica:"
 
 #: src/components/ErrorBoundary/ErrorBoundary.tsx:91
 msgid "Reload Application"
@@ -318,7 +318,7 @@ msgstr "Seed:"
 
 #: src/screens/SelectKey/SelectKey.tsx:141
 msgid "Select Key"
-msgstr "Selezione Chiave"
+msgstr "Selezione Treeve"
 
 #: src/components/Dropdown/Dropdown.tsx:85
 msgid "Select..."
@@ -330,7 +330,7 @@ msgstr "Invia Feedback"
 
 #: src/hooks/useValidateChangePassphraseParams.tsx:61
 msgid "Setting a passphrase is strongly recommended to protect your keys. Are you sure you want to skip setting a passphrase?"
-msgstr "Impostare una passphrase è fortemente raccomandato per proteggere le chiavi. Sei sicuro di voler saltare l'impostazione di una passphrase?"
+msgstr "Impostare una passphrase è fortemente raccomandato per proteggere le treevi. Sei sicuro di voler saltare l'impostazione di una passphrase?"
 
 #: src/components/Settings/Settings.tsx:48
 #: src/components/Settings/Settings.tsx:58
@@ -403,7 +403,7 @@ msgstr "Riprova"
 
 #: src/screens/SelectKey/SelectKey.tsx:135
 msgid "Unable to load the list of the keys"
-msgstr "Impossibile caricare la lista delle chiavi"
+msgstr "Impossibile caricare la lista delle treevi"
 
 #: src/components/LocaleToggle/LocaleToggle.tsx:48
 msgid "Unknown"
@@ -416,7 +416,7 @@ msgstr "Modifiche non salvate"
 
 #: src/hooks/useValidateChangePassphraseParams.tsx:70
 msgid "Using a passphrase is strongly recommended to protect your keys. Are you sure you want to disable passphrase protection?"
-msgstr "Utilizzare una passphrase è fortemente raccomandato per proteggere le chiavi. Sei sicuro di voler disabilitare la protezione delle passphrase ?"
+msgstr "Utilizzare una passphrase è fortemente raccomandato per proteggere le treevi. Sei sicuro di voler disabilitare la protezione delle passphrase ?"
 
 #: src/components/Fee/Fee.tsx:32
 msgid "Value seems high"
@@ -449,8 +449,8 @@ msgstr ""
 #~ msgstr "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 
 #: src/screens/SelectKey/SelectKey.tsx:149
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Benvenuto da Chia. Per favore accedi con una chiave esistente, o crea una nuova chiave."
+msgid "Welcome to Tree. Please log in with an existing key, or create a new key."
+msgstr "Benvenuto da Tree. Per favore accedi con una treeve esistente, o crea una nuova treeve."
 
 #: src/components/Back/Back.tsx:38
 #: src/components/FormBackButton/FormBackButton.tsx:30
@@ -459,7 +459,7 @@ msgstr "Sono state apportate modifiche non salvate. Vuoi scartarle?"
 
 #: src/hooks/useKeyringMigrationPrompt.tsx:20
 msgid "Your keys have not been migrated to a new keyring. You will be unable to create new keys or delete existing keys until migration completes. Would you like to migrate your keys now?"
-msgstr "Le chiavi non sono state migrate ad un nuovo keyring. Non sarà possibile creare nuove chiavi o eliminare le chiavi esistenti fino al completamento della migrazione. Vuoi migrare le tue chiavi ora?"
+msgstr "Le treevi non sono state migrate ad un nuovo keyring. Non sarà possibile creare nuove treevi o eliminare le treevi esistenti fino al completamento della migrazione. Vuoi migrare le tue treevi ora?"
 
 #: src/components/Amount/Amount.tsx:85
 msgid "{0, plural, one {mojo} other {mojos}}"

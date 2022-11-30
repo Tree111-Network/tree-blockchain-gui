@@ -10,7 +10,7 @@ import type Service from './services/Service';
 import ErrorData from './utils/ErrorData';
 import sleep from './utils/sleep';
 
-const log = debug('chia-api:client');
+const log = debug('tree-api:client');
 
 type Options = {
   url: string;

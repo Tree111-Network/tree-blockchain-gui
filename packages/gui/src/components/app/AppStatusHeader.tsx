@@ -1,5 +1,5 @@
-import { Flex, useMode, Mode } from '@chia/core';
-import { WalletConnections, WalletStatus } from '@chia/wallets';
+import { Flex, useMode, Mode } from '@tree/core';
+import { WalletConnections, WalletStatus } from '@tree/wallets';
 import { Trans } from '@lingui/macro';
 import { Box, ButtonGroup, Button, Popover } from '@mui/material';
 import React from 'react';

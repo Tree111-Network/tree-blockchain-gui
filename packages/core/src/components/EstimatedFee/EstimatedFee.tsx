@@ -1,4 +1,4 @@
-import { useGetFeeEstimateQuery } from '@chia/api-react';
+import { useGetFeeEstimateQuery } from '@tree/api-react';
 import { Trans } from '@lingui/macro';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import {
@@ -18,7 +18,7 @@ import Mode from '../../constants/Mode';
 import useCurrencyCode from '../../hooks/useCurrencyCode';
 import useLocale from '../../hooks/useLocale';
 import useMode from '../../hooks/useMode';
-import mojoToChiaLocaleString from '../../utils/mojoToChiaLocaleString';
+import mojoToTreeLocaleString from '../../utils/mojoToTreeLocaleString';
 import Fee from '../Fee';
 import Flex from '../Flex';
 
@@ -173,7 +173,7 @@ export default function EstimatedFee(props: FeeProps) {
 
   function formatEst(number, multiplier, locale) {
     const num = Math.round(number * multiplier * 10 ** -4) * 10 ** 4;
-    const formatNum = mojoToChiaLocaleString(num, locale);
+    const formatNum = mojoToTreeLocaleString(num, locale);
     return formatNum;
   }
 

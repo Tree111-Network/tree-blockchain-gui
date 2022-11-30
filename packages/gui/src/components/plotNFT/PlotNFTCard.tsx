@@ -1,4 +1,4 @@
-import { useDeleteUnconfirmedTransactionsMutation } from '@chia/api-react';
+import { useDeleteUnconfirmedTransactionsMutation } from '@tree/api-react';
 import {
   Button,
   TooltipTypography,
@@ -14,9 +14,9 @@ import {
   Link,
   ConfirmDialog,
   useOpenDialog,
-  mojoToChiaLocaleString,
-} from '@chia/core';
-import { Plot as PlotIcon } from '@chia/icons';
+  mojoToTreeLocaleString,
+} from '@tree/core';
+import { Plot as PlotIcon } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { Delete as DeleteIcon, Link as LinkIcon, Payment as PaymentIcon } from '@mui/icons-material';
 import { Box, Grid, Card, CardContent, Typography, ListItemIcon } from '@mui/material';
@@ -131,7 +131,7 @@ export default function PlotNFTCard(props: Props) {
     isSelfPooling && {
       key: 'rewards',
       label: <Trans>Unclaimed Rewards</Trans>,
-      value: <UnitFormat value={mojoToChiaLocaleString(balance)} state={State.SUCCESS} />,
+      value: <UnitFormat value={mojoToTreeLocaleString(balance)} state={State.SUCCESS} />,
     },
     {
       key: 'plotsCount',

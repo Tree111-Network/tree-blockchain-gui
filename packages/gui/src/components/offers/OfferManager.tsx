@@ -1,5 +1,5 @@
-import { OfferSummaryRecord, OfferTradeRecord } from '@chia/api';
-import { useCancelOfferMutation, useGetWalletsQuery } from '@chia/api-react';
+import { OfferSummaryRecord, OfferTradeRecord } from '@tree/api';
+import { useCancelOfferMutation, useGetWalletsQuery } from '@tree/api-react';
 import {
   Button,
   ButtonLoading,
@@ -14,13 +14,13 @@ import {
   TableControlled,
   TooltipIcon,
   useOpenDialog,
-  chiaToMojo,
+  treeToMojo,
   useCurrencyCode,
   useSerializedNavigationState,
   Tooltip,
   LayoutDashboardSub,
   MenuItem,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { Cancel, GetApp as Download, Info, Reply as Share, Visibility } from '@mui/icons-material';
 import {
@@ -87,7 +87,7 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
   async function handleConfirm() {
     const { fee: xchFee } = methods.getValues();
 
-    const fee = cancelWithTransaction ? chiaToMojo(xchFee) : new BigNumber(0);
+    const fee = cancelWithTransaction ? treeToMojo(xchFee) : new BigNumber(0);
 
     onClose([true, { cancelWithTransaction, cancellationFee: fee }]);
   }
@@ -469,7 +469,7 @@ export function OfferManager() {
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
                         <Trans>
-                          Create a file that you can use to trade XCH, Chia Asset Tokens, or NFTs with no counter-party
+                          Create a file that you can use to trade XCH, Tree Asset Tokens, or NFTs with no counter-party
                           risk.
                         </Trans>
                       </Typography>

@@ -1,7 +1,7 @@
-import { fungibleAssetFromAssetIdAndAmount, royaltyAssetFromNFTInfo } from '@chia/api';
-import type { CalculateRoyaltiesRequest, NFTInfo } from '@chia/api';
-import { useCalculateRoyaltiesForNFTsQuery, useGetNFTsByNFTIDsQuery, useGetWalletsQuery } from '@chia/api-react';
-import { catToMojo, chiaToMojo } from '@chia/core';
+import { fungibleAssetFromAssetIdAndAmount, royaltyAssetFromNFTInfo } from '@tree/api';
+import type { CalculateRoyaltiesRequest, NFTInfo } from '@tree/api';
+import { useCalculateRoyaltiesForNFTsQuery, useGetNFTsByNFTIDsQuery, useGetWalletsQuery } from '@tree/api-react';
+import { catToMojo, treeToMojo } from '@tree/core';
 import { uniq } from 'lodash';
 import React, { ReactNode, useMemo } from 'react';
 import { useWatch } from 'react-hook-form';
@@ -85,7 +85,7 @@ export default function OfferBuilderProvider(props: OfferBuilderProviderProps) {
   const requestedFungibleAssets = [
     ...(requestedXCH ?? [])
       .filter(({ amount }) => amount > 0)
-      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', chiaToMojo(amount))),
+      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', treeToMojo(amount))),
     ...(requestedTokens ?? [])
       .filter(({ assetId, amount }) => assetId?.length > 0 && amount > 0)
       .map(({ amount, assetId }) => fungibleAssetFromAssetIdAndAmount(assetId, catToMojo(amount))),
@@ -94,7 +94,7 @@ export default function OfferBuilderProvider(props: OfferBuilderProviderProps) {
   const offeredFungibleAssets = [
     ...(offeredXCH ?? [])
       .filter(({ amount }) => amount > 0)
-      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', chiaToMojo(amount))),
+      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', treeToMojo(amount))),
     ...(offeredTokens ?? [])
       .filter(({ assetId, amount }) => assetId?.length > 0 && amount > 0)
       .map(({ amount, assetId }) => fungibleAssetFromAssetIdAndAmount(assetId, catToMojo(amount))),

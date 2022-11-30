@@ -1,8 +1,8 @@
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery } from '@chia/api-react';
-import { Flex, Loading, catToMojo, mojoToCATLocaleString } from '@chia/core';
-import { Tokens } from '@chia/icons';
+import { WalletType } from '@tree/api';
+import type { Wallet } from '@tree/api';
+import { useGetWalletsQuery } from '@tree/api-react';
+import { Flex, Loading, catToMojo, mojoToCATLocaleString } from '@tree/core';
+import { Tokens } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
 import React, { useMemo } from 'react';
@@ -111,7 +111,7 @@ export default function OfferBuilderTokensSection(props: OfferBuilderTokensSecti
     <OfferBuilderSection
       icon={<Tokens />}
       title={<Trans>Tokens</Trans>}
-      subtitle={<Trans>Chia Asset Tokens (CATs) are tokens built on top of XCH</Trans>}
+      subtitle={<Trans>Tree Asset Tokens (CATs) are tokens built on top of XCH</Trans>}
       onAdd={showAdd ? handleAdd : undefined}
       expanded={!!fields.length}
       muted={muted}

@@ -1,11 +1,11 @@
 import { createApi } from '@reduxjs/toolkit/query/react';
 
-import chiaLazyBaseQuery from './chiaLazyBaseQuery';
+import treeLazyBaseQuery from './treeLazyBaseQuery';
 
-export const baseQuery = chiaLazyBaseQuery({});
+export const baseQuery = treeLazyBaseQuery({});
 
 export default createApi({
-  reducerPath: 'chiaApi',
+  reducerPath: 'treeApi',
   baseQuery,
   endpoints: () => ({}),
 });

@@ -1,7 +1,7 @@
-import { defaultPlotter, PlotterName } from '@chia/api';
-import type { Plotter, PlotterMap } from '@chia/api';
-import { useGetPlottersQuery } from '@chia/api-react';
-import { CardStep, Select, StateColor } from '@chia/core';
+import { defaultPlotter, PlotterName } from '@tree/api';
+import type { Plotter, PlotterMap } from '@tree/api';
+import { useGetPlottersQuery } from '@tree/api-react';
+import { CardStep, Select, StateColor } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import { FormControl, FormHelperText, Grid, InputLabel, MenuItem, Typography } from '@mui/material';
 import React, { useMemo } from 'react';

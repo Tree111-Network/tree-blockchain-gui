@@ -1,5 +1,5 @@
-import { useGetNFTInfoQuery } from '@chia/api-react';
-import { Flex, Loading, Tooltip } from '@chia/core';
+import { useGetNFTInfoQuery } from '@tree/api-react';
+import { Flex, Loading, Tooltip } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Grid, Typography, Card } from '@mui/material';
 import React from 'react';

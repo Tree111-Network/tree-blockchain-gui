@@ -1,5 +1,5 @@
-import { WalletType } from '@chia/api';
-import { CopyToClipboard, Flex, Link, FormatLargeNumber, TooltipIcon, mojoToCATLocaleString } from '@chia/core';
+import { WalletType } from '@tree/api';
+import { CopyToClipboard, Flex, Link, FormatLargeNumber, TooltipIcon, mojoToCATLocaleString } from '@tree/core';
 import { Plural, t, Trans } from '@lingui/macro';
 import { Box, Typography } from '@mui/material';
 import React from 'react';

@@ -1,5 +1,5 @@
-import { SelectKey, LayoutHero, LayoutDashboard, Mode, useMode } from '@chia/core';
-import { WalletAdd, WalletImport, Wallets } from '@chia/wallets';
+import { SelectKey, LayoutHero, LayoutDashboard, Mode, useMode } from '@tree/core';
+import { WalletAdd, WalletImport, Wallets } from '@tree/wallets';
 import React from 'react';
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom';
 

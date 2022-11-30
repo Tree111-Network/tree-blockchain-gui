@@ -1,12 +1,12 @@
-# chia-blockchain-gui/api
+# tree-blockchain-gui/api
 
-![Chia logo](https://www.chia.net/wp-content/uploads/2022/09/chia-logo.svg)
+![Tree logo](https://www.tree111.com/wp-content/uploads/2022/09/tree-logo.svg)
 
-![GitHub contributors](https://img.shields.io/github/contributors/Chia-Network/chia-blockchain-gui?logo=GitHub)
+![GitHub contributors](https://img.shields.io/github/contributors/Tree111-Network/tree-blockchain-gui?logo=GitHub)
 
-This library provides support for TypeScript/JavaScript [Chia](https://www.chia.net) apps to access the [Chia Blockchain RPC](https://docs.chia.net/rpc/), by making it easier to perform the following actions:
+This library provides support for TypeScript/JavaScript [Tree](https://www.tree111.com) apps to access the [Tree Blockchain RPC](https://docs.tree111.com/rpc/), by making it easier to perform the following actions:
 
-- Making requests to the Chia Blockchain RPC.
+- Making requests to the Tree Blockchain RPC.
 - Catch responses and errors with standard try/catch and async/await syntax.
 - Catch error when the request has a timeout. Each request has a default timeout of 10 minutes.
 - Auto-connect to daemon when you send the first request.
@@ -17,7 +17,7 @@ This library provides support for TypeScript/JavaScript [Chia](https://www.chia.
 ## Example
 
 ```ts
-import Client, { Wallet } from '@chia/api';
+import Client, { Wallet } from '@tree/api';
 import Websocket from 'ws';
 import sleep from 'sleep-promise';
 
@@ -60,4 +60,4 @@ import sleep from 'sleep-promise';
 
 ## Development
 
-Please read and follow the main [README.md](https://github.com/Chia-Network/chia-blockchain-gui) of this monorepo.
+Please read and follow the main [README.md](https://github.com/Tree111-Network/tree-blockchain-gui) of this monorepo.

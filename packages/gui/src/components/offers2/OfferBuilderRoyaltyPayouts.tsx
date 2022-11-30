@@ -1,5 +1,5 @@
-import { RoyaltyCalculationFungibleAssetPayout } from '@chia/api';
-import { CopyToClipboard, Flex } from '@chia/core';
+import { RoyaltyCalculationFungibleAssetPayout } from '@tree/api';
+import { CopyToClipboard, Flex } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Box, Divider } from '@mui/material';
 import React from 'react';

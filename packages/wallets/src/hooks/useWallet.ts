@@ -1,7 +1,7 @@
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery, useGetCatListQuery } from '@chia/api-react';
-import { useCurrencyCode } from '@chia/core';
+import { WalletType } from '@tree/api';
+import type { Wallet } from '@tree/api';
+import { useGetWalletsQuery, useGetCatListQuery } from '@tree/api-react';
+import { useCurrencyCode } from '@tree/core';
 import { useMemo } from 'react';
 
 export default function useWallet(walletId?: number | string): {

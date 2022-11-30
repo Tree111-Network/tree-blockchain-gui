@@ -1,6 +1,6 @@
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery } from '@chia/api-react';
-import { Flex } from '@chia/core';
+import type { Wallet } from '@tree/api';
+import { useGetWalletsQuery } from '@tree/api-react';
+import { Flex } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Grid } from '@mui/material';
 import React from 'react';

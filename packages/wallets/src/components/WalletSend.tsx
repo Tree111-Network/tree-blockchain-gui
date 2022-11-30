@@ -1,4 +1,4 @@
-import { useGetSyncStatusQuery, useSendTransactionMutation, useFarmBlockMutation } from '@chia/api-react';
+import { useGetSyncStatusQuery, useSendTransactionMutation, useFarmBlockMutation } from '@tree/api-react';
 import {
   AdvancedOptions,
   Amount,
@@ -9,11 +9,11 @@ import {
   Flex,
   Card,
   useOpenDialog,
-  chiaToMojo,
+  treeToMojo,
   getTransactionResult,
   useIsSimulator,
   TooltipIcon,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { Button, Grid, Typography } from '@mui/material';
 import React from 'react';
@@ -103,10 +103,10 @@ export default function WalletSend(props: SendCardProps) {
 
     let { address } = data;
     if (address.includes('colour')) {
-      throw new Error(t`Cannot send chia to coloured address. Please enter a chia address.`);
+      throw new Error(t`Cannot send tree to coloured address. Please enter a tree address.`);
     }
 
-    if (address.slice(0, 12) === 'chia_addr://') {
+    if (address.slice(0, 12) === 'tree_addr://') {
       address = address.slice(12);
     }
     if (address.startsWith('0x') || address.startsWith('0X')) {
@@ -119,8 +119,8 @@ export default function WalletSend(props: SendCardProps) {
     const queryData = {
       walletId,
       address,
-      amount: chiaToMojo(amount),
-      fee: chiaToMojo(fee),
+      amount: treeToMojo(amount),
+      fee: treeToMojo(fee),
       waitForConfirmation: true,
     };
 

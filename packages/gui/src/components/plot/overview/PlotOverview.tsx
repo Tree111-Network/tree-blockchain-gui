@@ -1,5 +1,5 @@
-import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@chia/api-react';
-import { Loading, Flex } from '@chia/core';
+import { useGetThrottlePlotQueueQuery, useGetTotalHarvestersSummaryQuery } from '@tree/api-react';
+import { Loading, Flex } from '@tree/core';
 import { Grid } from '@mui/material';
 import React from 'react';
 

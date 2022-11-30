@@ -1,5 +1,5 @@
-import { useGetHarvesterConnectionsQuery, useGetTotalHarvestersSummaryQuery } from '@chia/api-react';
-import { AdvancedOptions, Flex, LayoutDashboardSub, Loading } from '@chia/core';
+import { useGetHarvesterConnectionsQuery, useGetTotalHarvestersSummaryQuery } from '@tree/api-react';
+import { AdvancedOptions, Flex, LayoutDashboardSub, Loading } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 

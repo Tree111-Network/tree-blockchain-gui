@@ -1,4 +1,4 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@tree/api';
 import { defineMessage } from '@lingui/macro';
 
 const WalletName = {
@@ -21,7 +21,7 @@ const WalletName = {
     message: 'Custody Wallet',
   }),
   [WalletType.CAT]: defineMessage({
-    message: 'Chia Asset Token',
+    message: 'Tree Asset Token',
   }),
   [WalletType.RECOVERABLE]: defineMessage({
     message: 'Recoverable Wallet',

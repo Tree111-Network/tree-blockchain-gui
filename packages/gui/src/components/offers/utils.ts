@@ -1,6 +1,6 @@
-import { WalletType } from '@chia/api';
-import type { OfferSummaryAssetInfo, OfferSummaryRecord } from '@chia/api';
-import { mojoToCAT, mojoToChia, mojoToCATLocaleString, mojoToChiaLocaleString } from '@chia/core';
+import { WalletType } from '@tree/api';
+import type { OfferSummaryAssetInfo, OfferSummaryRecord } from '@tree/api';
+import { mojoToCAT, mojoToTree, mojoToCATLocaleString, mojoToTreeLocaleString } from '@tree/core';
 import { t } from '@lingui/macro';
 import type { ChipProps } from '@mui/material';
 
@@ -179,7 +179,7 @@ export function colorForOfferState(state: OfferState): ChipProps['color'] {
 
 export function formatAmountForWalletType(amount: string | number, walletType: WalletType, locale?: string): string {
   if (walletType === WalletType.STANDARD_WALLET) {
-    return mojoToChiaLocaleString(amount, locale);
+    return mojoToTreeLocaleString(amount, locale);
   }
   if (walletType === WalletType.CAT) {
     return mojoToCATLocaleString(amount, locale);
@@ -207,7 +207,7 @@ export function offerAssetTypeForAssetId(assetId: string, offerSummary: OfferSum
   let assetType: OfferAsset | undefined;
 
   if (['xch', 'txch'].includes(assetId)) {
-    assetType = OfferAsset.CHIA;
+    assetType = OfferAsset.TREE;
   } else {
     const { infos } = offerSummary;
     const info: OfferSummaryAssetInfo = infos[assetId];
@@ -230,7 +230,7 @@ export function offerAssetTypeForAssetId(assetId: string, offerSummary: OfferSum
 }
 
 export function offerAssetIdForAssetType(assetType: OfferAsset, offerSummary: OfferSummaryRecord): string | undefined {
-  if (assetType === OfferAsset.CHIA) {
+  if (assetType === OfferAsset.TREE) {
     return 'xch';
   }
 
@@ -279,12 +279,12 @@ export type GetNFTPriceWithoutRoyaltiesResult = {
 export function getNFTPriceWithoutRoyalties(
   summary: OfferSummaryRecord
 ): GetNFTPriceWithoutRoyaltiesResult | undefined {
-  for (const assetType of [OfferAsset.TOKEN, OfferAsset.CHIA]) {
+  for (const assetType of [OfferAsset.TOKEN, OfferAsset.TREE]) {
     const assetId = offerAssetIdForAssetType(assetType, summary);
     if (assetId) {
       const amountInMojos = offerAssetAmountForAssetId(assetId, summary);
       if (amountInMojos) {
-        const amountInTokens = assetType === OfferAsset.CHIA ? mojoToChia(amountInMojos) : mojoToCAT(amountInMojos);
+        const amountInTokens = assetType === OfferAsset.TREE ? mojoToTree(amountInMojos) : mojoToCAT(amountInMojos);
         return { amount: amountInTokens.toNumber(), assetId, assetType };
       }
     }

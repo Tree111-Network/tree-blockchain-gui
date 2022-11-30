@@ -1,4 +1,4 @@
-import { AdvancedOptions, CardStep, TextField, RadioGroup, Flex, Checkbox, TooltipIcon, Select } from '@chia/core';
+import { AdvancedOptions, CardStep, TextField, RadioGroup, Flex, Checkbox, TooltipIcon, Select } from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import {
   Grid,

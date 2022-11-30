@@ -1,6 +1,6 @@
-import { WalletType } from '@chia/api';
-import type { CATToken, Wallet } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
+import { WalletType } from '@tree/api';
+import type { CATToken, Wallet } from '@tree/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@tree/api-react';
 import { Trans, t } from '@lingui/macro';
 import { FormControl, InputLabel, MenuItem, Select, Typography } from '@mui/material';
 import React, { useMemo } from 'react';

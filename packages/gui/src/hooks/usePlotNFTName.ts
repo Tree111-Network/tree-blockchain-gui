@@ -1,4 +1,4 @@
-import type { PlotNFTExternal, PlotNFT } from '@chia/api';
+import type { PlotNFTExternal, PlotNFT } from '@tree/api';
 import { useMemo } from 'react';
 import seedrandom from 'seedrandom';
 import { uniqueNamesGenerator, adjectives, colors, animals } from 'unique-names-generator';

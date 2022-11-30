@@ -1,6 +1,6 @@
-import type { NFTInfo } from '@chia/api';
-import { useGetNFTInfoQuery, useGetNFTWallets, useLocalStorage } from '@chia/api-react';
-import { Back, Flex, LayoutDashboardSub, Loading, useOpenDialog } from '@chia/core';
+import type { NFTInfo } from '@tree/api';
+import { useGetNFTInfoQuery, useGetNFTWallets, useLocalStorage } from '@tree/api-react';
+import { Back, Flex, LayoutDashboardSub, Loading, useOpenDialog } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { MoreVert } from '@mui/icons-material';
 import { Box, Grid, Typography, IconButton, Button } from '@mui/material';

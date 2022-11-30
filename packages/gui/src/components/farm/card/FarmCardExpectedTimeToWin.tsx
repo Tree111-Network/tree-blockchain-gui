@@ -1,5 +1,5 @@
-import { useGetBlockchainStateQuery, useGetTotalHarvestersSummaryQuery } from '@chia/api-react';
-import { State, CardSimple } from '@chia/core';
+import { useGetBlockchainStateQuery, useGetTotalHarvestersSummaryQuery } from '@tree/api-react';
+import { State, CardSimple } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
 import moment from 'moment';

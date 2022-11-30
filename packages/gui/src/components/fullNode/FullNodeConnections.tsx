@@ -1,6 +1,6 @@
-import { Connection } from '@chia/api';
-import { useGetFullNodeConnectionsQuery } from '@chia/api-react';
-import { Card, FormatBytes, FormatLargeNumber, Loading, Table } from '@chia/core';
+import { Connection } from '@tree/api';
+import { useGetFullNodeConnectionsQuery } from '@tree/api-react';
+import { Card, FormatBytes, FormatLargeNumber, Loading, Table } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Tooltip } from '@mui/material';
 import React from 'react';

@@ -1,4 +1,4 @@
-import type { CalculateRoyaltiesResponse } from '@chia/api';
+import type { CalculateRoyaltiesResponse } from '@tree/api';
 import { createContext } from 'react';
 
 import OfferState from '../offers/OfferState';

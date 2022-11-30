@@ -1,5 +1,5 @@
-import { english } from '@chia/api';
-import { useAddPrivateKeyMutation, useLogInMutation } from '@chia/api-react';
+import { english } from '@tree/api';
+import { useAddPrivateKeyMutation, useLogInMutation } from '@tree/api-react';
 import {
   AlertDialog,
   Autocomplete,
@@ -11,7 +11,7 @@ import {
   useOpenDialog,
   useTrans,
   TextField,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Typography, Container, Grid } from '@mui/material';
 import React from 'react';
@@ -126,7 +126,7 @@ export default function WalletImport() {
             <Trans>Import Wallet from Mnemonics</Trans>
           </Typography>
           <Typography variant="subtitle1" align="center">
-            <Trans>Enter the 24 word mnemonic that you have saved in order to restore your Chia wallet.</Trans>
+            <Trans>Enter the 24 word mnemonic that you have saved in order to restore your Tree wallet.</Trans>
           </Typography>
           <Grid spacing={2} rowSpacing={3} container>
             {fields.map((field, index) => (

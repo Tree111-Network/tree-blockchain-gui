@@ -1,4 +1,4 @@
-import { useGetHarvesterStats } from '@chia/api-react';
+import { useGetHarvesterStats } from '@tree/api-react';
 import { Box, Typography, LinearProgress, type LinearProgressProps } from '@mui/material';
 import React from 'react';
 

@@ -1,5 +1,5 @@
-import { WalletType } from '@chia/api';
-import { Flex } from '@chia/core';
+import { WalletType } from '@tree/api';
+import { Flex } from '@tree/core';
 import { ImportExport } from '@mui/icons-material';
 import { InputAdornment, TextField, Typography } from '@mui/material';
 import React, { useMemo, useState } from 'react';

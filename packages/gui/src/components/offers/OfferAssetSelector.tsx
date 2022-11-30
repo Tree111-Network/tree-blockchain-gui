@@ -1,6 +1,6 @@
-import { Wallet, WalletType, type CATToken } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { Select, useCurrencyCode } from '@chia/core';
+import { Wallet, WalletType, type CATToken } from '@tree/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@tree/api-react';
+import { Select, useCurrencyCode } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { FormControl, InputLabel, MenuItem } from '@mui/material';
 import React, { useMemo } from 'react';
@@ -24,11 +24,11 @@ type BuildAssetSelectorListParams = {
   rows: OfferEditorRowData[];
   otherRows: OfferEditorRowData[];
   selectedWalletId: number;
-  chiaCurrencyCode: string;
+  treeCurrencyCode: string;
 };
 
 function buildAssetSelectorList(params: BuildAssetSelectorListParams): WalletOfferAssetSelection[] {
-  const { wallets, catList, rows, otherRows, selectedWalletId, chiaCurrencyCode } = params;
+  const { wallets, catList, rows, otherRows, selectedWalletId, treeCurrencyCode } = params;
   const list: WalletOfferAssetSelection[] = [];
   const usedWalletIds: Set<number> = new Set();
   const otherUsedWalletIds: Set<number> = new Set();
@@ -63,8 +63,8 @@ function buildAssetSelectorList(params: BuildAssetSelectorListParams): WalletOff
     }
 
     if (wallet.type === WalletType.STANDARD_WALLET) {
-      name = 'Chia';
-      symbol = chiaCurrencyCode;
+      name = 'Tree';
+      symbol = treeCurrencyCode;
     } else if (wallet.type === WalletType.CAT) {
       name = wallet.name;
       tail = wallet.meta.assetId;
@@ -121,7 +121,7 @@ function OfferAssetSelector(props: OfferAssetSelectorProps) {
       rows,
       otherRows,
       selectedWalletId,
-      chiaCurrencyCode: currencyCode,
+      treeCurrencyCode: currencyCode,
     });
   }, [wallets, catList, rows, otherRows]);
 

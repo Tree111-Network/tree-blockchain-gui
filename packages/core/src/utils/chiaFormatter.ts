@@ -4,7 +4,7 @@ import type Unit from '../constants/Unit';
 import UnitValue from '../constants/UnitValue';
 import bigNumberToLocaleString from './bigNumberToLocaleString';
 
-class Chia {
+class Tree {
   private _value: BigNumber;
 
   private _unit: Unit;
@@ -31,7 +31,7 @@ class Chia {
     const amountInFromUnit = this.value.times(fromUnitValue.toString());
     const newValue = amountInFromUnit.div(toUnitValue.toString());
 
-    return new Chia(newValue, newUnit);
+    return new Tree(newValue, newUnit);
   }
 
   toFixed(decimals: number): string {
@@ -51,6 +51,6 @@ class Chia {
   }
 }
 
-export default function chiaFormatter(value: number | string | BigNumber, unit: Unit) {
-  return new Chia(value, unit);
+export default function treeFormatter(value: number | string | BigNumber, unit: Unit) {
+  return new Tree(value, unit);
 }

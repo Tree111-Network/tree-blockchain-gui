@@ -1,4 +1,4 @@
-import type { Point } from '@chia/api';
+import type { Point } from '@tree/api';
 import { sumBy } from 'lodash';
 
 function sumPoints(points: Point[]): number {

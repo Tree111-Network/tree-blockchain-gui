@@ -1,6 +1,6 @@
-import type { Wallet } from '@chia/api';
-import { WalletType } from '@chia/api';
-import { chiaToMojo, catToMojo } from '@chia/core';
+import type { Wallet } from '@tree/api';
+import { WalletType } from '@tree/api';
+import { treeToMojo, catToMojo } from '@tree/core';
 import { t } from '@lingui/macro';
 import BigNumber from 'bignumber.js';
 
@@ -28,7 +28,7 @@ export default async function offerBuilderDataToOffer(
 
   const usedNFTs: string[] = [];
 
-  const feeInMojos = firstFee ? chiaToMojo(firstFee.amount) : new BigNumber(0);
+  const feeInMojos = firstFee ? treeToMojo(firstFee.amount) : new BigNumber(0);
 
   const walletIdsAndAmounts: Record<string, BigNumber> = {};
   const driverDict: Record<string, Driver> = {};
@@ -56,7 +56,7 @@ export default async function offerBuilderDataToOffer(
         throw new Error(t`No standard wallet found`);
       }
 
-      const mojoAmount = chiaToMojo(amount);
+      const mojoAmount = treeToMojo(amount);
       walletIdsAndAmounts[wallet.id] = mojoAmount.negated();
 
       const hasEnoughBalance = await hasSpendableBalance(wallet.id, mojoAmount);
@@ -125,7 +125,7 @@ export default async function offerBuilderDataToOffer(
       throw new Error(t`Cannot offer and request the same asset`);
     }
 
-    walletIdsAndAmounts[wallet.id] = chiaToMojo(amount);
+    walletIdsAndAmounts[wallet.id] = treeToMojo(amount);
   });
 
   requestedTokens.forEach((token) => {

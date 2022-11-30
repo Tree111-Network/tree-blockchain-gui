@@ -1,4 +1,4 @@
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+import { useGetKeyringStatusQuery } from '@tree/api-react';
 import {
   Button,
   AlertDialog,
@@ -11,7 +11,7 @@ import {
   StateTypography,
   State,
   TooltipIcon,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Help as HelpIcon } from '@mui/icons-material';
 import { Tooltip } from '@mui/material';

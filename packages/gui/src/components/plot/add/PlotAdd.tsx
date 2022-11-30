@@ -1,5 +1,5 @@
-import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@chia/api-react';
-import { useCurrencyCode, Suspender } from '@chia/core';
+import { useGetLoggedInFingerprintQuery, useGetPlottersQuery } from '@tree/api-react';
+import { useCurrencyCode, Suspender } from '@tree/core';
 import React from 'react';
 
 import useUnconfirmedPlotNFTs from '../../../hooks/useUnconfirmedPlotNFTs';

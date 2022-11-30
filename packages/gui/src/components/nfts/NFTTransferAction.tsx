@@ -1,5 +1,5 @@
-import type { NFTInfo } from '@chia/api';
-import { useTransferNFTMutation } from '@chia/api-react';
+import type { NFTInfo } from '@tree/api';
+import { useTransferNFTMutation } from '@tree/api-react';
 import {
   Button,
   ButtonLoading,
@@ -7,12 +7,12 @@ import {
   Form,
   Flex,
   TextField,
-  chiaToMojo,
+  treeToMojo,
   useCurrencyCode,
   useOpenDialog,
   validAddress,
   useShowError,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography } from '@mui/material';
 import React, { useState } from 'react';
@@ -77,7 +77,7 @@ export default function NFTTransferAction(props: NFTTransferActionProps) {
 
   async function handleSubmit(formData: NFTTransferFormData) {
     const { destination, fee } = formData;
-    const feeInMojos = chiaToMojo(fee || 0);
+    const feeInMojos = treeToMojo(fee || 0);
 
     try {
       if (!currencyCode) {

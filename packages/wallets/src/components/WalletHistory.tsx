@@ -1,5 +1,5 @@
-import { WalletType, TransactionType, toBech32m } from '@chia/api';
-import { useGetOfferRecordMutation, useGetSyncStatusQuery } from '@chia/api-react';
+import { WalletType, TransactionType, toBech32m } from '@tree/api';
+import { useGetOfferRecordMutation, useGetSyncStatusQuery } from '@tree/api-react';
 import {
   Card,
   CopyToClipboard,
@@ -8,11 +8,11 @@ import {
   TableControlled,
   useCurrencyCode,
   useSerializedNavigationState,
-  mojoToChia,
+  mojoToTree,
   mojoToCAT,
   FormatLargeNumber,
-} from '@chia/core';
-import type { Row } from '@chia/core';
+} from '@tree/core';
+import type { Row } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import {
   CallReceived as CallReceivedIcon,
@@ -153,7 +153,7 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
           <strong>{isOutgoing ? <Trans>-</Trans> : <Trans>+</Trans>}</strong>
           &nbsp;
           <strong>
-            <FormatLargeNumber value={type === WalletType.CAT ? mojoToCAT(row.amount) : mojoToChia(row.amount)} />
+            <FormatLargeNumber value={type === WalletType.CAT ? mojoToCAT(row.amount) : mojoToTree(row.amount)} />
           </strong>
           &nbsp;
           {metadata.unit}
@@ -166,7 +166,7 @@ const getCols = (type: WalletType, isSyncing, getOfferRecord, navigate) => [
     field: (row: Row, metadata) => (
       <>
         <strong>
-          <FormatLargeNumber value={mojoToChia(row.feeAmount)} />
+          <FormatLargeNumber value={mojoToTree(row.feeAmount)} />
         </strong>
         &nbsp;
         {metadata.feeUnit}

@@ -1,5 +1,5 @@
-import { toBech32m } from '@chia/api';
-import { useCurrencyCode } from '@chia/core';
+import { toBech32m } from '@tree/api';
+import { useCurrencyCode } from '@tree/core';
 import { useMemo } from 'react';
 
 export default function useBurnAddress(): string | undefined {

@@ -1,5 +1,5 @@
-import { useCreateNewPoolWalletMutation } from '@chia/api-react';
-import { Flex, Suspender } from '@chia/core';
+import { useCreateNewPoolWalletMutation } from '@tree/api-react';
+import { Flex, Suspender } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { ChevronRight as ChevronRightIcon } from '@mui/icons-material';
 import React, { ReactNode } from 'react';

@@ -1,6 +1,6 @@
-import { useRefreshPlotsMutation } from '@chia/api-react';
-import { Button, CardHero, Flex, Link, useOpenDialog } from '@chia/core';
-import { Plots } from '@chia/icons';
+import { useRefreshPlotsMutation } from '@tree/api-react';
+import { Button, CardHero, Flex, Link, useOpenDialog } from '@tree/core';
+import { Plots } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { Grid, Typography, Divider } from '@mui/material';
 import React from 'react';
@@ -32,8 +32,8 @@ export default function PlotOverviewHero() {
           <Plots color="primary" fontSize="extraLarge" />
           <Typography variant="body1">
             <Trans>
-              Plots are allocated space on your hard drive used to farm and earn Chia. &nbsp;
-              <Link target="_blank" href="https://github.com/Chia-Network/chia-blockchain/wiki/Network-Architecture">
+              Plots are allocated space on your hard drive used to farm and earn Tree. &nbsp;
+              <Link target="_blank" href="https://github.com/Tree111-Network/tree-blockchain/wiki/Network-Architecture">
                 Learn more
               </Link>
             </Trans>

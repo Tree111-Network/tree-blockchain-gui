@@ -1,5 +1,5 @@
-import { useDeleteUnconfirmedTransactionsMutation } from '@chia/api-react';
-import { Flex, ConfirmDialog, useOpenDialog, DropdownActions, MenuItem } from '@chia/core';
+import { useDeleteUnconfirmedTransactionsMutation } from '@tree/api-react';
+import { Flex, ConfirmDialog, useOpenDialog, DropdownActions, MenuItem } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Typography, ListItemIcon, Tab, Tabs } from '@mui/material';

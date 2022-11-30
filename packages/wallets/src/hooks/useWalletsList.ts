@@ -1,7 +1,7 @@
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useGetWalletsQuery, useGetStrayCatsQuery, useGetCatListQuery, useAddCATTokenMutation } from '@chia/api-react';
-import { useShowError } from '@chia/core';
+import { WalletType } from '@tree/api';
+import type { Wallet } from '@tree/api';
+import { useGetWalletsQuery, useGetStrayCatsQuery, useGetCatListQuery, useAddCATTokenMutation } from '@tree/api-react';
+import { useShowError } from '@tree/core';
 import { orderBy } from 'lodash';
 import { useMemo } from 'react';
 
@@ -136,7 +136,7 @@ export default function useWalletsList(
         hidden: isHidden(wallet.id),
         walletId: wallet.id,
         assetId: wallet.meta?.assetId,
-        name: wallet.type === WalletType.STANDARD_WALLET ? 'Chia' : wallet.meta?.name ?? wallet.name,
+        name: wallet.type === WalletType.STANDARD_WALLET ? 'Tree' : wallet.meta?.name ?? wallet.name,
       })),
       ...catBaseWallets.map((wallet: Wallet) => ({
         id: wallet.id,

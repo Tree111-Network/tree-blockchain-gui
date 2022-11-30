@@ -2,8 +2,8 @@ import child_process from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-import { OfferTradeRecord } from '@chia/api';
-import { usePrefs } from '@chia/api-react';
+import { OfferTradeRecord } from '@tree/api';
+import { usePrefs } from '@tree/api-react';
 import {
   ButtonLoading,
   CopyToClipboard,
@@ -13,7 +13,7 @@ import {
   useOpenDialog,
   useShowError,
   useOpenExternal,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import {
   Button,
@@ -36,7 +36,7 @@ import OfferLocalStorageKeys from './OfferLocalStorage';
 import OfferSummary from './OfferSummary';
 import { offerContainsAssetOfType, shortSummaryForOffer, suggestedFilenameForOffer } from './utils';
 
-const log = debug('chia-gui:offers');
+const log = debug('tree-gui:offers');
 
 /* ========================================================================== */
 
@@ -74,7 +74,7 @@ type CommonDialogProps = {
 
 type OfferShareServiceDialogProps = CommonOfferProps & CommonDialogProps;
 
-const testnetDummyHost = 'offers-api-sim.chia.net';
+const testnetDummyHost = 'offers-api-sim.tree111.com';
 
 const OfferSharingProviders: {
   [key in OfferSharingService]: OfferSharingProvider;
@@ -233,7 +233,7 @@ async function postToOfferBin(offerData: string, sharePrivately: boolean, testne
   log('OfferBin upload completed');
 
   if (testnet) {
-    return 'https://www.chia.net/offers';
+    return 'https://www.tree111.com/offers';
   }
 
   const { hash } = JSON.parse(responseBody);
@@ -280,7 +280,7 @@ async function postToHashgreen(offerData: string, testnet: boolean): Promise<str
     log('Hashgreen upload completed');
 
     if (testnet) {
-      return 'https://www.chia.net/offers';
+      return 'https://www.tree111.com/offers';
     }
 
     const jsonObj = JSON.parse(responseBody);
@@ -375,7 +375,7 @@ type KeybaseCLIRequest = {
   channelName: string;
 };
 
-const KeybaseTeamName = 'chia_offers';
+const KeybaseTeamName = 'tree_offers';
 const KeybaseChannelName = 'offers-trading';
 
 async function execKeybaseCLI(request: KeybaseCLIRequest): Promise<boolean> {

@@ -1,5 +1,5 @@
-import { ServiceName } from '@chia/api';
-import { useService } from '@chia/api-react';
+import { ServiceName } from '@tree/api';
+import { useService } from '@tree/api-react';
 
 import FarmerStatus from '../constants/FarmerStatus';
 import FullNodeState from '../constants/FullNodeState';

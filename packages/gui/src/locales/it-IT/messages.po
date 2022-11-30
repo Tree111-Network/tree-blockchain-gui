@@ -6,13 +6,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: it_IT\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: tree-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-10-24 18:15\n"
 "Last-Translator: \n"
 "Language-Team: Italian\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: tree-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: it\n"
 "X-Crowdin-File: /main/packages/gui/src/locales/en-US/messages.po\n"
@@ -56,8 +56,8 @@ msgstr "Un valore di {0} è raccomandato"
 
 #: src/electron/main.tsx:681
 #: src/electron/main.tsx:768
-msgid "About Chia Blockchain"
-msgstr "Informazioni sulla Blockchain di Chia"
+msgid "About Tree Blockchain"
+msgstr "Informazioni sulla Blockchain di Tree"
 
 #: src/components/offers/NFTOfferViewer.tsx:749
 #: src/components/offers/OfferAcceptConfirmationDialog.tsx:23
@@ -123,7 +123,7 @@ msgstr "Aggiungi {currencyCode} dal Faucet"
 
 #: src/components/app/AppKeyringMigrator.tsx:259
 msgid "After your keys are successfully migrated to the new keyring, you may choose to have your keys removed from the old keyring."
-msgstr "Dopo che le chiavi saranno migrate con successo al nuovo keyring, sarà possibile rimuoverle da vecchio"
+msgstr "Dopo che le treevi saranno migrate con successo al nuovo keyring, sarà possibile rimuoverle da vecchio"
 
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:44
 #: src/components/nfts/gallery/NFTGallerySidebar.tsx:73
@@ -247,8 +247,8 @@ msgid "Block VDF Iterations"
 msgstr "Blocco Iterazioni VDF"
 
 #: src/components/block/Block.jsx:295
-msgid "Block at height {0} in the Chia blockchain"
-msgstr "Blocco all'altezza {0} nella blockchain Chia"
+msgid "Block at height {0} in the Tree blockchain"
+msgstr "Blocco all'altezza {0} nella blockchain Tree"
 
 #: src/components/block/Block.jsx:128
 msgid "Block with hash {headerHash}"
@@ -360,7 +360,7 @@ msgstr "Cambia Pool"
 
 #: src/components/settings/SettingsDataLayer.tsx:57
 #: src/components/settings/SettingsStartup.tsx:36
-msgid "Changes will take effect the next time Chia is started"
+msgid "Changes will take effect the next time Tree is started"
 msgstr ""
 
 #: src/electron/main.tsx:660
@@ -380,12 +380,12 @@ msgid "Check Provenance on Spacescan.io"
 msgstr "Controlla la provenienza su Spacescan.io"
 
 #: src/electron/main.tsx:678
-msgid "Chia"
-msgstr "Chia"
+msgid "Tree"
+msgstr "Tree"
 
 #: src/electron/main.tsx:617
-msgid "Chia Blockchain Wiki"
-msgstr "Wiki della Blockchain Chia"
+msgid "Tree Blockchain Wiki"
+msgstr "Wiki della Blockchain Tree"
 
 #: src/components/app/AppSelectMode.tsx:155
 msgid "Choose Farming Mode"
@@ -660,7 +660,7 @@ msgstr "Elimina"
 
 #: src/components/app/AppPassPrompt.tsx:110
 msgid "Delete Key"
-msgstr "Elimina Chiave"
+msgstr "Elimina Treeve"
 
 #: src/components/plot/PlotAction.tsx:24
 #: src/components/plot/queue/PlotQueueActions.tsx:34
@@ -673,11 +673,11 @@ msgstr "Elimina Transazioni non Confermate"
 
 #: src/components/app/AppPassPrompt.tsx:106
 msgid "Deleting key"
-msgstr "Chiave in cancellazione"
+msgstr "Treeve in cancellazione"
 
 #: src/components/plot/add/PlotAddChoosePlotter.tsx:92
 msgid "Depending on your system configuration, you may find that an alternative plotter produces plots faster than the default Chia Proof of Space plotter. If unsure, use the default Chia Proof of Space plotter."
-msgstr "A seconda della configurazione del tuo sistema, potresti verificare che un plotter alternativo è più rapido del plotter predefinito. Se vi fossero dubbi, si consiglia di utilizzare il plotter standard Chia."
+msgstr "A seconda della configurazione del tuo sistema, potresti verificare che un plotter alternativo è più rapido del plotter predefinito. Se vi fossero dubbi, si consiglia di utilizzare il plotter standard Tree."
 
 #: src/components/settings/SettingsPanel.tsx:180
 msgid "Derivation Index"
@@ -833,11 +833,11 @@ msgstr ""
 
 #: src/components/app/AppKeyringMigrator.tsx:143
 msgid "Enter a strong passphrase and click Migrate Keys to secure your keys"
-msgstr "Inserisci una Passphrase complessa e fai click su Migrare per mettere al sicuro le tue chiavi"
+msgstr "Inserisci una Passphrase complessa e fai click su Migrare per mettere al sicuro le tue treevi"
 
 #: src/components/settings/SetPassphrasePrompt.tsx:158
 msgid "Enter a strong passphrase to secure your keys:"
-msgstr "Inserisci una Passphrase complessa per proteggere le tue chiavi:"
+msgstr "Inserisci una Passphrase complessa per proteggere le tue treevi:"
 
 #: src/components/settings/RemovePassphrasePrompt.tsx:121
 msgid "Enter your passphrase:"
@@ -879,7 +879,7 @@ msgid "Exclude final directory"
 msgstr "Escludi directory finale"
 
 #: src/components/nfts/gallery/NFTGalleryHero.tsx:17
-msgid "Explore the Chia ecosystem; discover and trade great NFTs"
+msgid "Explore the Tree ecosystem; discover and trade great NFTs"
 msgstr ""
 
 #: src/components/offers/utils.ts:175
@@ -905,7 +905,7 @@ msgstr "Errore nell'aggiornare la tua Passphrase: {0}"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:469
 msgid "Farmer Public Key"
-msgstr "Chiave pubblica del farmer"
+msgstr "Treeve pubblica del farmer"
 
 #: src/components/block/Block.jsx:246
 msgid "Farmer Puzzle Hash"
@@ -1224,7 +1224,7 @@ msgstr "Stato non valido"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:66
 msgid "It is a one-time login link that can be used to log in to a pool's website. It contains a signature using the farmer's key from the plot NFT. Not all pools support this feature."
-msgstr "Si tratta di un collegamento di accesso una tantum che può essere utilizzato per accedere al sito web di una pool. Contiene una firma che utilizza la chiave del farmer dal plot NFT. Non tutte le pool supportano questa funzione."
+msgstr "Si tratta di un collegamento di accesso una tantum che può essere utilizzato per accedere al sito web di una pool. Contiene una firma che utilizza la treeve del farmer dal plot NFT. Non tutte le pool supportano questa funzione."
 
 #: src/components/plotNFT/PlotNFTCard.tsx:381
 msgid "Join Pool"
@@ -1412,7 +1412,7 @@ msgstr "Migra Keyring"
 
 #: src/components/app/AppKeyringMigrator.tsx:277
 msgid "Migrate Keys"
-msgstr "Migra Chiavi"
+msgstr "Migra Treevi"
 
 #: src/components/app/AppKeyringMigrator.tsx:136
 msgid "Migration required"
@@ -1444,7 +1444,7 @@ msgstr "Minuti"
 
 #: src/components/plot/PlotHarvester.tsx:136
 msgid "Missing Keys"
-msgstr "Chiavi mancanti"
+msgstr "Treevi mancanti"
 
 #: src/components/nfts/NFTPreview.tsx:823
 msgid "Missing preview_image_hash key"
@@ -1590,7 +1590,7 @@ msgstr "Ancora nessun plot"
 #: src/components/block/FarmManageFarmingRewards.tsx:135
 #: src/components/farm/FarmManageFarmingRewards.tsx:148
 msgid "No private keys for one or both addresses. Safe only if you are sending rewards to another wallet."
-msgstr "Nessuna chiave privata per uno o entrambi gli indirizzi. Sicuro solo se stai inviando ricompense ad un altro wallet."
+msgstr "Nessuna treeve privata per uno o entrambi gli indirizzi. Sicuro solo se stai inviando ricompense ad un altro wallet."
 
 #: src/components/offers/OfferViewer.tsx:176
 msgid "Node Count"
@@ -1828,7 +1828,7 @@ msgstr "La protezione Passphrase è stata abilitata"
 
 #: src/components/settings/SettingsPanel.tsx:93
 msgid "Passphrase support requires migrating your keys to a new keyring"
-msgstr "Il supporto alla Passphrase richiede la migrazione delle chiavi a un nuovo Keyring"
+msgstr "Il supporto alla Passphrase richiede la migrazione delle treevi a un nuovo Keyring"
 
 #: src/components/offers/OfferDataEntryDialog.tsx:40
 #: src/components/offers/OfferImport.tsx:177
@@ -1944,7 +1944,7 @@ msgstr "Id Plot"
 
 #: src/components/plot/PlotHarvesterPlots.tsx:56
 msgid "Plot Key"
-msgstr "Chiave Plot"
+msgstr "Treeve Plot"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:490
 msgid "Plot NFT Plot Target Address"
@@ -1961,7 +1961,7 @@ msgstr "Il Plot NFT con p2_singleton_puzzle_hash {plotNFTId} non esiste"
 
 #: src/components/block/Block.jsx:238
 msgid "Plot Public Key"
-msgstr "Chiave Pubblica del Plot"
+msgstr "Treeve Pubblica del Plot"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:93
 msgid "Plot Size"
@@ -1994,11 +1994,11 @@ msgstr "Plot che hanno passato il filtro"
 
 #: src/components/plot/card/PlotCardNotFound.tsx:11
 msgid "Plots With Missing Keys"
-msgstr "Plot con chiavi mancanti"
+msgstr "Plot con treevi mancanti"
 
 #: src/components/plot/overview/PlotOverviewHero.tsx:33
-msgid "Plots are allocated space on your hard drive used to farm and earn Chia.<0>Learn more</0>"
-msgstr "I plot hanno allocato spazio nel tuo hard disk per coltivare e guadagnare Chia.<0>Per saperne di piu<0>"
+msgid "Plots are allocated space on your hard drive used to farm and earn Tree.<0>Learn more</0>"
+msgstr "I plot hanno allocato spazio nel tuo hard disk per coltivare e guadagnare Tree.<0>Per saperne di piu<0>"
 
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:228
 msgid "Plots in the same queue will run in serial"
@@ -2046,7 +2046,7 @@ msgstr "Indirizzo Contratto Pool"
 
 #: src/components/plot/PlotHarvesterPlots.tsx:62
 msgid "Pool Key"
-msgstr "Chiave Pool"
+msgstr "Treeve Pool"
 
 #: src/components/plotNFT/PlotNFTGetPoolLoginLinkDialog.tsx:53
 msgid "Pool Login Link"
@@ -2059,7 +2059,7 @@ msgstr "Istruzioni Di Pagamento Pool"
 #: src/components/block/Block.jsx:242
 #: src/components/plot/add/PlotAddNumberOfPlots.tsx:480
 msgid "Pool Public Key"
-msgstr "Chiave Pubblica Pool"
+msgstr "Treeve Pubblica Pool"
 
 #: src/components/block/Block.jsx:252
 msgid "Pool Puzzle Hash"
@@ -2235,7 +2235,7 @@ msgstr "Rimuovi Passphrase"
 
 #: src/components/app/AppKeyringMigrator.tsx:255
 msgid "Remove keys from old keyring upon successful migration"
-msgstr "Rimuovere le chiavi dal vecchio keyring al momento della migrazione riuscita"
+msgstr "Rimuovere le treevi dal vecchio keyring al momento della migrazione riuscita"
 
 #: src/components/plot/queue/PlotQueueIndicator.tsx:36
 msgid "Removing"
@@ -2301,7 +2301,7 @@ msgstr "Posizione seconda cartella temporanea"
 
 #: src/components/settings/SettingsPanel.tsx:99
 msgid "Secure your keychain using a strong passphrase"
-msgstr "Proteggi il tuo portachiavi usando una Passphrase complessa"
+msgstr "Proteggi il tuo portatreevi usando una Passphrase complessa"
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:121
 msgid "Select 2nd Temporary Directory"
@@ -2713,7 +2713,7 @@ msgstr ""
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:293
 msgid "This plot NFT is assigned to a different key. You can still create plots for this plot NFT, but you can not make changes."
-msgstr "Questo plot NFT è assegnato a una chiave diversa. Puoi ancora creare dei plot per questo plot NFT, ma non puoi apportare modifiche."
+msgstr "Questo plot NFT è assegnato a una treeve diversa. Puoi ancora creare dei plot per questo plot NFT, ma non puoi apportare modifiche."
 
 #: src/components/farm/FarmLastAttemptedProof.tsx:47
 msgid "This table shows you the last time your farm attempted to win a block challenge. <0>Learn more</0>"
@@ -2770,9 +2770,9 @@ msgstr ""
 msgid "Total Amount Requested"
 msgstr ""
 
-#: src/components/farm/card/FarmCardTotalChiaFarmed.tsx:27
-msgid "Total Chia Farmed"
-msgstr "Totale Chia guadagnati"
+#: src/components/farm/card/FarmCardTotalTreeFarmed.tsx:27
+msgid "Total Tree Farmed"
+msgstr "Totale Tree guadagnati"
 
 #: src/components/plot/card/PlotCardTotalHarvesters.tsx:11
 msgid "Total Harvesters"
@@ -3156,8 +3156,8 @@ msgstr ""
 #: src/components/app/AppKeyringMigrator.tsx:239
 #: src/components/settings/ChangePassphrasePrompt.tsx:271
 #: src/components/settings/SetPassphrasePrompt.tsx:242
-msgid "Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase."
-msgstr "La tua passphrase può essere memorizzata nell'archivio credenziali sicuro del tuo sistema. Chia sarà in grado di accedere alle tue chiavi senza richiedere la tua passphrase."
+msgid "Your passphrase can be stored in your system's secure credential store. Tree will be able to access your keys without prompting for your passphrase."
+msgstr "La tua passphrase può essere memorizzata nell'archivio credenziali sicuro del tuo sistema. Tree sarà in grado di accedere alle tue treevi senza richiedere la tua passphrase."
 
 #: src/components/settings/SettingsPanel.tsx:52
 msgid "Your passphrase has been set"

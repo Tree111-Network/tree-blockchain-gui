@@ -1,9 +1,9 @@
 {
-  "name": "@chia/gui",
-  "author": "Chia Network <hello@chia.net> (https://chia.net/)",
-  "description": "GUI for Chia Blockchain",
+  "name": "@tree/gui",
+  "author": "Tree Network <hello@tree111.com> (https://tree111.com/)",
+  "description": "GUI for Tree Blockchain",
   "license": "Apache-2.0",
-  "productName": "Chia Blockchain",
+  "productName": "Tree Blockchain",
   "private": true,
   "homepage": "./",
   "main": "build/electron/main.js",
@@ -11,8 +11,8 @@
     "node": ">=16.15.0"
   },
   "build": {
-    "productName": "chia",
-    "appId": "net.chia.blockchain",
+    "productName": "tree",
+    "appId": "net.tree.blockchain",
     "asar": true,
     "asarUnpack": "**/daemon/**",
     "npmRebuild": false,
@@ -25,13 +25,13 @@
     ],
     "protocols": [
       {
-        "name": "Chia URL",
+        "name": "Tree URL",
         "schemes": [
-          "chia"
+          "tree"
         ]
       },
       {
-        "name": "Chia XCH Address",
+        "name": "Tree XCH Address",
         "schemes": [
           "xch"
         ]
@@ -41,10 +41,10 @@
       "target": "nsis",
       "icon": "src/assets/img/tree.ico",
       "timeStampServer": "http://timestamp.comodoca.com",
-      "executableName": "Chia"
+      "executableName": "Tree"
     },
     "nsis": {
-      "artifactName": "ChiaSetup-${env.CHIA_INSTALLER_VERSION}.exe",
+      "artifactName": "TreeSetup-${env.TREE_INSTALLER_VERSION}.exe",
       "oneClick": false,
       "deleteAppDataOnUninstall": true,
       "allowToChangeInstallationDirectory": true,
@@ -54,13 +54,13 @@
       "include": "installer.nsh"
     },
     "mac": {
-      "executableName": "Chia",
-      "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
+      "executableName": "Tree",
+      "artifactName": "${productName}-${env.TREE_INSTALLER_VERSION}.${ext}",
       "category": "public.app-category.finance",
       "target": "dmg",
       "icon": "src/assets/img/tree.icns",
       "entitlements": "entitlements.mac.plist",
-      "provisioningProfile": "chiablockchain.provisionprofile",
+      "provisioningProfile": "treeblockchain.provisionprofile",
       "darkModeSupport": true,
       "hardenedRuntime": true,
       "gatekeeperAssess": false
@@ -87,7 +87,7 @@
       }
     },
     "linux": {
-      "artifactName": "${productName}-${env.CHIA_INSTALLER_VERSION}.${ext}",
+      "artifactName": "${productName}-${env.TREE_INSTALLER_VERSION}.${ext}",
       "icon": "src/assets/img/tree.icns"
     },
     "deb": {
@@ -102,7 +102,7 @@
         "--rpm-rpmbuild-define=_enable_debug_package 0",
         "--rpm-rpmbuild-define=debug_package %{nil}",
         "--rpm-rpmbuild-define=__os_install_post /usr/lib/rpm/brp-compress %{nil}",
-        "--rpm-attr=4755,root,root:/opt/chia/chrome-sandbox"
+        "--rpm-attr=4755,root,root:/opt/tree/chrome-sandbox"
       ]
     }
   },
@@ -130,11 +130,11 @@
     "test": "jest"
   },
   "dependencies": {
-    "@chia/api": "1.0.0",
-    "@chia/api-react": "1.0.0",
-    "@chia/core": "1.0.0",
-    "@chia/icons": "1.0.0",
-    "@chia/wallets": "1.0.0",
+    "@tree/api": "1.0.0",
+    "@tree/api-react": "1.0.0",
+    "@tree/core": "1.0.0",
+    "@tree/icons": "1.0.0",
+    "@tree/wallets": "1.0.0",
     "@electron/remote": "2.0.1",
     "@lingui/core": "3.13.0",
     "@lingui/macro": "3.13.0",

@@ -1,4 +1,4 @@
-import Client, { Service } from '@chia/api';
+import Client, { Service } from '@tree/api';
 import { BaseQueryFn } from '@reduxjs/toolkit/query/react';
 
 type Options = {
@@ -6,7 +6,7 @@ type Options = {
   service: Service;
 };
 
-export default function chiaBaseQuery(options: Options): BaseQueryFn<
+export default function treeBaseQuery(options: Options): BaseQueryFn<
   {
     command: string;
     args?: any[];

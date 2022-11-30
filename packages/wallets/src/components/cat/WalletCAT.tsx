@@ -1,7 +1,7 @@
-import { WalletType } from '@chia/api';
-import { useSetCATNameMutation, useGetCatListQuery } from '@chia/api-react';
-import { Flex, Loading, MenuItem, useOpenDialog } from '@chia/core';
-import { Offers as OffersIcon } from '@chia/icons';
+import { WalletType } from '@tree/api';
+import { useSetCATNameMutation, useGetCatListQuery } from '@tree/api-react';
+import { Flex, Loading, MenuItem, useOpenDialog } from '@tree/core';
+import { Offers as OffersIcon } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { Edit as RenameIcon, Fingerprint as FingerprintIcon } from '@mui/icons-material';
 import { Box, ListItemIcon, Alert, Typography } from '@mui/material';

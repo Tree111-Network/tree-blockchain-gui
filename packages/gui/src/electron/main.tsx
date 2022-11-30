@@ -30,7 +30,7 @@ import packageJson from '../../package.json';
 import AppIcon from '../assets/img/tree64x64.png';
 import About from '../components/about/About';
 import { i18n } from '../config/locales';
-import chiaEnvironment from '../util/chiaEnvironment';
+import treeEnvironment from '../util/treeEnvironment';
 import computeHash from '../util/computeHash';
 import loadConfig from '../util/loadConfig';
 import manageDaemonLifetime from '../util/manageDaemonLifetime';
@@ -56,7 +56,7 @@ if (!fs.existsSync(thumbCacheFolder)) {
 
 let cacheLimitSize: number = 1024;
 
-// Set the userData directory to its location within CHIA_ROOT/gui
+// Set the userData directory to its location within TREE_ROOT/gui
 setUserDataDir();
 
 function renderAbout(): string {
@@ -142,7 +142,7 @@ if (!handleSquirrelEvent()) {
 
   const ensureCorrectEnvironment = () => {
     // check that the app is either packaged or running in the python venv
-    if (!chiaEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
+    if (!treeEnvironment.guessPackaged() && !('VIRTUAL_ENV' in process.env)) {
       app.quit();
       return false;
     }
@@ -169,7 +169,7 @@ if (!handleSquirrelEvent()) {
 
     const createWindow = async () => {
       if (manageDaemonLifetime(NET)) {
-        chiaEnvironment.startChiaDaemon();
+        treeEnvironment.startTreeDaemon();
       }
 
       ipcMain.handle('getConfig', () => loadConfig(NET));
@@ -832,27 +832,27 @@ if (!handleSquirrelEvent()) {
         role: 'help',
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'Chia Blockchain Wiki' }),
+            label: i18n._(/* i18n */ { id: 'Tree Blockchain Wiki' }),
             click: () => {
-              openExternal('https://github.com/Chia-Network/chia-blockchain/wiki');
+              openExternal('https://github.com/Tree111-Network/tree-blockchain/wiki');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Frequently Asked Questions' }),
             click: () => {
-              openExternal('https://github.com/Chia-Network/chia-blockchain/wiki/FAQ');
+              openExternal('https://github.com/Tree111-Network/tree-blockchain/wiki/FAQ');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Release Notes' }),
             click: () => {
-              openExternal('https://github.com/Chia-Network/chia-blockchain/releases');
+              openExternal('https://github.com/Tree111-Network/tree-blockchain/releases');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Contribute on GitHub' }),
             click: () => {
-              openExternal('https://github.com/Chia-Network/chia-blockchain/blob/main/CONTRIBUTING.md');
+              openExternal('https://github.com/Tree111-Network/tree-blockchain/blob/main/CONTRIBUTING.md');
             },
           },
           {
@@ -861,19 +861,19 @@ if (!handleSquirrelEvent()) {
           {
             label: i18n._(/* i18n */ { id: 'Report an Issue...' }),
             click: () => {
-              openExternal('https://github.com/Chia-Network/chia-blockchain/issues');
+              openExternal('https://github.com/Tree111-Network/tree-blockchain/issues');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Chat on KeyBase' }),
             click: () => {
-              openExternal('https://keybase.io/team/chia_network.public');
+              openExternal('https://keybase.io/team/tree_network.public');
             },
           },
           {
             label: i18n._(/* i18n */ { id: 'Follow on Twitter' }),
             click: () => {
-              openExternal('https://twitter.com/chia_project');
+              openExternal('https://twitter.com/tree_project');
             },
           },
         ],
@@ -881,12 +881,12 @@ if (!handleSquirrelEvent()) {
     ];
 
     if (process.platform === 'darwin') {
-      // Chia Blockchain menu (Mac)
+      // Tree Blockchain menu (Mac)
       template.unshift({
-        label: i18n._(/* i18n */ { id: 'Chia' }),
+        label: i18n._(/* i18n */ { id: 'Tree' }),
         submenu: [
           {
-            label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+            label: i18n._(/* i18n */ { id: 'About Tree Blockchain' }),
             click: () => {
               openAbout();
             },
@@ -973,7 +973,7 @@ if (!handleSquirrelEvent()) {
           type: 'separator',
         },
         {
-          label: i18n._(/* i18n */ { id: 'About Chia Blockchain' }),
+          label: i18n._(/* i18n */ { id: 'About Tree Blockchain' }),
           click() {
             openAbout();
           },

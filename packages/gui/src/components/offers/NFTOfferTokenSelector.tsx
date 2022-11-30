@@ -1,7 +1,7 @@
-import { WalletType } from '@chia/api';
-import type { CATToken, Wallet } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { useCurrencyCode } from '@chia/core';
+import { WalletType } from '@tree/api';
+import type { CATToken, Wallet } from '@tree/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@tree/api-react';
+import { useCurrencyCode } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { FormControl, InputLabel, MenuItem, Select } from '@mui/material';
 import React, { useMemo } from 'react';
@@ -44,13 +44,13 @@ export default function NFTOfferTokenSelector(props: Props) {
       return [];
     }
 
-    const chiaWalletSelection = [wallets.find((wallet: Wallet) => wallet.type === WalletType.STANDARD_WALLET)].map(
+    const treeWalletSelection = [wallets.find((wallet: Wallet) => wallet.type === WalletType.STANDARD_WALLET)].map(
       (wallet: WalletType) => ({
         walletId: wallet.id,
         walletType: wallet.type,
-        name: 'Chia',
+        name: 'Tree',
         symbol: currencyCode,
-        displayName: `Chia (${currencyCode})`,
+        displayName: `Tree (${currencyCode})`,
         disabled: false,
         tail: '',
       })
@@ -71,7 +71,7 @@ export default function NFTOfferTokenSelector(props: Props) {
           tail: wallet.tail,
         };
       });
-    const allOptions = [...chiaWalletSelection, ...catOptions];
+    const allOptions = [...treeWalletSelection, ...catOptions];
     const selected = allOptions.find((option: TokenSelectOption) => option.walletId === selectedWalletId);
 
     return [selected, allOptions];

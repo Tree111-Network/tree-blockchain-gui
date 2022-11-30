@@ -1,6 +1,6 @@
-import type { NFTInfo, Wallet } from '@chia/api';
-import { useGetNFTWallets } from '@chia/api-react';
-import { Back, Flex, LayoutDashboardSub, Loading } from '@chia/core';
+import type { NFTInfo, Wallet } from '@tree/api';
+import { useGetNFTWallets } from '@tree/api-react';
+import { Back, Flex, LayoutDashboardSub, Loading } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Box, Typography } from '@mui/material';
 import React, { useMemo } from 'react';

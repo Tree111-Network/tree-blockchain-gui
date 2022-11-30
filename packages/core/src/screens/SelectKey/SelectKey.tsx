@@ -1,10 +1,10 @@
-import type { KeyData } from '@chia/api';
+import type { KeyData } from '@tree/api';
 import {
   useGetKeyringStatusQuery,
   useDeleteAllKeysMutation,
   useLogInAndSkipImportMutation,
   useGetKeysQuery,
-} from '@chia/api-react';
+} from '@tree/api-react';
 import { Trans } from '@lingui/macro';
 import { Alert, Typography, Container } from '@mui/material';
 import React, { useState } from 'react';
@@ -135,7 +135,7 @@ export default function SelectKey() {
               <Trans>Sign In</Trans>
             </Typography>
             <Typography variant="subtitle1" align="center">
-              <Trans>Welcome to Chia. Please log in with an existing key, or create a new key.</Trans>
+              <Trans>Welcome to Tree. Please log in with an existing key, or create a new key.</Trans>
             </Typography>
           </>
         )}

@@ -1,5 +1,5 @@
-import { ConfirmDialog, CopyToClipboard, Flex, useOpenDialog, useOpenExternal } from '@chia/core';
-import { usePrefs } from '@chia/api-react';
+import { ConfirmDialog, CopyToClipboard, Flex, useOpenDialog, useOpenExternal } from '@tree/core';
+import { usePrefs } from '@tree/api-react';
 import { Trans } from '@lingui/macro';
 import { Checkbox, FormControlLabel, InputAdornment, TextField, Typography } from '@mui/material';
 import React from 'react';

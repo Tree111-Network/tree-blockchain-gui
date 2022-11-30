@@ -1,7 +1,7 @@
-import { WalletType } from '@chia/api';
-import { useGetWalletBalanceQuery } from '@chia/api-react';
-import { mojoToCATLocaleString, mojoToChiaLocaleString, useLocale } from '@chia/core';
-import { useWallet } from '@chia/wallets';
+import { WalletType } from '@tree/api';
+import { useGetWalletBalanceQuery } from '@tree/api-react';
+import { mojoToCATLocaleString, mojoToTreeLocaleString, useLocale } from '@tree/core';
+import { useWallet } from '@tree/wallets';
 import { Trans } from '@lingui/macro';
 import React, { useMemo } from 'react';
 
@@ -26,7 +26,7 @@ export default function OfferBuilderWalletBalance(props: OfferBuilderWalletBalan
     }
 
     if (wallet.type === WalletType.STANDARD_WALLET) {
-      return mojoToChiaLocaleString(walletBalance.spendableBalance, locale);
+      return mojoToTreeLocaleString(walletBalance.spendableBalance, locale);
     }
 
     if (wallet.type === WalletType.CAT) {

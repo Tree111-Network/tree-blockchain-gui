@@ -11,7 +11,7 @@ import {
   TextField,
   Tooltip,
   TooltipIcon,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Remove } from '@mui/icons-material';
 import { Box, Typography, IconButton } from '@mui/material';

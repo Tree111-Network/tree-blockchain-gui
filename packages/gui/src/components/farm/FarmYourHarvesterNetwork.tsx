@@ -1,7 +1,7 @@
-import type { Connection } from '@chia/api';
-import { ServiceName } from '@chia/api';
-import { useService, useGetHarvesterConnectionsQuery } from '@chia/api-react';
-import { Table, FormatBytes, FormatConnectionStatus, Card } from '@chia/core';
+import type { Connection } from '@tree/api';
+import { ServiceName } from '@tree/api';
+import { useService, useGetHarvesterConnectionsQuery } from '@tree/api-react';
+import { Table, FormatBytes, FormatConnectionStatus, Card } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Delete as DeleteIcon } from '@mui/icons-material';
 import { Typography, Tooltip, IconButton } from '@mui/material';

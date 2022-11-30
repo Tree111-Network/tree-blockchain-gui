@@ -1,4 +1,4 @@
-export { default as Chia } from './Chia';
+export { default as Tree } from './Tree';
 export { default as Farm } from './Farm';
 export { default as Farming } from './Farming';
 export { default as Fees } from './Fees';

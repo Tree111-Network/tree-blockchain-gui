@@ -1,8 +1,8 @@
 import BigNumber from 'bignumber.js';
 
 import Unit from '../constants/Unit';
-import chiaFormatter from './chiaFormatter';
+import treeFormatter from './treeFormatter';
 
-export default function chiaToMojo(chia: string | number | BigNumber): BigNumber {
-  return chiaFormatter(chia, Unit.CHIA).to(Unit.MOJO).toBigNumber();
+export default function treeToMojo(tree: string | number | BigNumber): BigNumber {
+  return treeFormatter(tree, Unit.TREE).to(Unit.MOJO).toBigNumber();
 }

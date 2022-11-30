@@ -1,20 +1,20 @@
-import { useGetFarmedAmountQuery } from '@chia/api-react';
-import { useCurrencyCode, mojoToChiaLocaleString, CardSimple, useLocale } from '@chia/core';
+import { useGetFarmedAmountQuery } from '@tree/api-react';
+import { useCurrencyCode, mojoToTreeLocaleString, CardSimple, useLocale } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import React, { useMemo } from 'react';
 
-export default function FarmCardTotalChiaFarmed() {
+export default function FarmCardTotalTreeFarmed() {
   const currencyCode = useCurrencyCode();
   const [locale] = useLocale();
   const { data, isLoading, error } = useGetFarmedAmountQuery();
 
   const farmedAmount = data?.farmedAmount;
 
-  const totalChiaFarmed = useMemo(() => {
+  const totalTreeFarmed = useMemo(() => {
     if (farmedAmount !== undefined) {
       return (
         <>
-          {mojoToChiaLocaleString(farmedAmount, locale)}
+          {mojoToTreeLocaleString(farmedAmount, locale)}
           &nbsp;
           {currencyCode}
         </>
@@ -23,6 +23,6 @@ export default function FarmCardTotalChiaFarmed() {
   }, [farmedAmount, locale, currencyCode]);
 
   return (
-    <CardSimple title={<Trans>Total Chia Farmed</Trans>} value={totalChiaFarmed} loading={isLoading} error={error} />
+    <CardSimple title={<Trans>Total Tree Farmed</Trans>} value={totalTreeFarmed} loading={isLoading} error={error} />
   );
 }

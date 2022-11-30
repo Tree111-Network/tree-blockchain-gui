@@ -1,5 +1,5 @@
-import { useGetThrottlePlotQueueQuery } from '@chia/api-react';
-import { Card, Table } from '@chia/core';
+import { useGetThrottlePlotQueueQuery } from '@tree/api-react';
+import { Card, Table } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { TableRow } from '@mui/material';
 import React, { useMemo } from 'react';

@@ -1,4 +1,4 @@
-import { ButtonLoading, Loading, Flex, Form, Back, chiaToMojo, ConfirmDialog, useOpenDialog } from '@chia/core';
+import { ButtonLoading, Loading, Flex, Form, Back, treeToMojo, ConfirmDialog, useOpenDialog } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import { Alert } from '@mui/material';
 import React, { useState, ReactNode, forwardRef, useImperativeHandle } from 'react';
@@ -38,7 +38,7 @@ async function prepareSubmitData(data: FormData): SubmitData {
     initialTargetState.relativeLockHeight = relativeLockHeight;
   }
 
-  const feeMojos = chiaToMojo(fee || '0');
+  const feeMojos = treeToMojo(fee || '0');
 
   return {
     fee: feeMojos,

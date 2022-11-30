@@ -1,4 +1,4 @@
-import { Loading, State, StateIndicator } from '@chia/core';
+import { Loading, State, StateIndicator } from '@tree/core';
 import React from 'react';
 
 import FullNodeState from '../../constants/FullNodeState';

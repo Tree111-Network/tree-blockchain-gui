@@ -6,13 +6,13 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: @lingui/cli\n"
 "Language: sv_SE\n"
-"Project-Id-Version: chia-blockchain\n"
+"Project-Id-Version: tree-blockchain\n"
 "Report-Msgid-Bugs-To: \n"
 "PO-Revision-Date: 2022-10-24 18:14\n"
 "Last-Translator: \n"
 "Language-Team: Swedish\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: chia-blockchain\n"
+"X-Crowdin-Project: tree-blockchain\n"
 "X-Crowdin-Project-ID: 440660\n"
 "X-Crowdin-Language: sv-SE\n"
 "X-Crowdin-File: /main/packages/core/src/locales/en-US/messages.po\n"
@@ -449,8 +449,8 @@ msgstr "Plånbok {0}"
 #~ msgstr "Warning: This key is used for your pool rewards address. By deleting this key you may lose access to any future pool rewards"
 
 #: src/screens/SelectKey/SelectKey.tsx:149
-msgid "Welcome to Chia. Please log in with an existing key, or create a new key."
-msgstr "Välkommen till Chia. Logga in med en existerande nyckel, eller skapa en ny nyckel."
+msgid "Welcome to Tree. Please log in with an existing key, or create a new key."
+msgstr "Välkommen till Tree. Logga in med en existerande nyckel, eller skapa en ny nyckel."
 
 #: src/components/Back/Back.tsx:38
 #: src/components/FormBackButton/FormBackButton.tsx:30

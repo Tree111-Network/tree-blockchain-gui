@@ -1,4 +1,4 @@
-import { State, StateIndicator, CardSimple } from '@chia/core';
+import { State, StateIndicator, CardSimple } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import React, { type ReactNode } from 'react';
 

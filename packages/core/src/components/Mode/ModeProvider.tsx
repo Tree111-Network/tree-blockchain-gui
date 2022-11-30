@@ -5,7 +5,7 @@ import React, {
   useMemo,
   useCallback,
 } from 'react';
-import { usePrefs } from '@chia/api-react';
+import { usePrefs } from '@tree/api-react';
 import type Mode from '../../constants/Mode';
 
 export const ModeContext = createContext<

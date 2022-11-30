@@ -1,6 +1,6 @@
-import { NFTInfo } from '@chia/api';
-import type { Wallet } from '@chia/api';
-import { useGetDIDsQuery, useGetNFTWallets, useSetNFTDIDMutation } from '@chia/api-react';
+import { NFTInfo } from '@tree/api';
+import type { Wallet } from '@tree/api';
+import { useGetDIDsQuery, useGetNFTWallets, useSetNFTDIDMutation } from '@tree/api-react';
 import {
   AlertDialog,
   Button,
@@ -14,11 +14,11 @@ import {
   Form,
   TooltipIcon,
   MenuItem,
-  chiaToMojo,
+  treeToMojo,
   truncateValue,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { PermIdentity as PermIdentityIcon } from '@mui/icons-material';
 import {
@@ -239,7 +239,7 @@ export function NFTMoveToProfileAction(props: NFTMoveToProfileActionProps) {
 
   async function handleSubmit(formData: NFTMoveToProfileFormData) {
     const { destination, fee } = formData;
-    const feeInMojos = chiaToMojo(fee || 0);
+    const feeInMojos = treeToMojo(fee || 0);
     let isValid = true;
 
     if (!destination || destination === currentDIDId) {

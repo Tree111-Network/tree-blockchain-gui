@@ -1,4 +1,4 @@
-import { Flex, CardKeyValue, CopyToClipboard, Tooltip, Truncate, truncateValue, Link } from '@chia/core';
+import { Flex, CardKeyValue, CopyToClipboard, Tooltip, Truncate, truncateValue, Link } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Box, Typography } from '@mui/material';
 import React, { useMemo } from 'react';

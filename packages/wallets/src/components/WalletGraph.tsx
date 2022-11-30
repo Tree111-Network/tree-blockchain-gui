@@ -1,7 +1,7 @@
-import { TransactionType, WalletType } from '@chia/api';
-import type { Transaction } from '@chia/api';
-import { useGetWalletBalanceQuery } from '@chia/api-react';
-import { mojoToChia, mojoToCAT, blockHeightToTimestamp } from '@chia/core';
+import { TransactionType, WalletType } from '@tree/api';
+import type { Transaction } from '@tree/api';
+import { useGetWalletBalanceQuery } from '@tree/api-react';
+import { mojoToTree, mojoToCAT, blockHeightToTimestamp } from '@tree/core';
 import BigNumber from 'bignumber.js';
 import { orderBy, groupBy, map } from 'lodash';
 import React, { ReactNode } from 'react';
@@ -103,8 +103,8 @@ function prepareGraphPoints(
   const points = [
     {
       x: blockHeightToTimestamp(peakTransaction.confirmedAtHeight, peakTransaction),
-      y: BigNumber.max(0, (walletType === WalletType.CAT ? mojoToCAT(start) : mojoToChia(start)).toNumber()), // max 21,000,000 safe to number
-      tooltip: (walletType === WalletType.CAT ? mojoToCAT(balance) : mojoToChia(balance)).toString(), // bignumber is not supported by react
+      y: BigNumber.max(0, (walletType === WalletType.CAT ? mojoToCAT(start) : mojoToTree(start)).toNumber()), // max 21,000,000 safe to number
+      tooltip: (walletType === WalletType.CAT ? mojoToCAT(balance) : mojoToTree(balance)).toString(), // bignumber is not supported by react
     },
   ];
 
@@ -120,8 +120,8 @@ function prepareGraphPoints(
 
     points.push({
       x: timestamp,
-      y: BigNumber.max(0, (walletType === WalletType.CAT ? mojoToCAT(start) : mojoToChia(start)).toNumber()), // max 21,000,000 safe to number
-      tooltip: walletType === WalletType.CAT ? mojoToCAT(start) : mojoToChia(start).toString(), // bignumber is not supported by react
+      y: BigNumber.max(0, (walletType === WalletType.CAT ? mojoToCAT(start) : mojoToTree(start)).toNumber()), // max 21,000,000 safe to number
+      tooltip: walletType === WalletType.CAT ? mojoToCAT(start) : mojoToTree(start).toString(), // bignumber is not supported by react
     });
   });
 

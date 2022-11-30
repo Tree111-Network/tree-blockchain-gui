@@ -1,5 +1,5 @@
-import type { NFTInfo, Wallet } from '@chia/api';
-import { useGetNFTWallets /* useGetNFTsByNFTIDsQuery */, usePrefs } from '@chia/api-react';
+import type { NFTInfo, Wallet } from '@tree/api';
+import { useGetNFTWallets /* useGetNFTsByNFTIDsQuery */, usePrefs } from '@tree/api-react';
 import {
   Flex,
   LayoutDashboardSub,
@@ -7,8 +7,8 @@ import {
   DropdownActions,
   MenuItem,
   /* useTrans, */ usePersistState,
-} from '@chia/core';
-import { WalletReceiveAddressField } from '@chia/wallets';
+} from '@tree/core';
+import { WalletReceiveAddressField } from '@tree/wallets';
 import { Trans } from '@lingui/macro';
 import { FilterList as FilterListIcon } from '@mui/icons-material';
 import { Switch, FormGroup, FormControlLabel, Box, Grid } from '@mui/material';

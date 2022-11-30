@@ -1,5 +1,5 @@
-import { useGetLoggedInFingerprintQuery } from '@chia/api-react';
-import { LayoutLoading } from '@chia/core';
+import { useGetLoggedInFingerprintQuery } from '@tree/api-react';
+import { LayoutLoading } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import React, { useEffect, type ReactNode } from 'react';
 import { useNavigate } from 'react-router-dom';

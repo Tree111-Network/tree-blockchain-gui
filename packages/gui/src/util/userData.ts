@@ -5,26 +5,26 @@ import path from 'path';
 import { getConfigRootDir } from './loadConfig';
 
 export function getUserDataDir(): string {
-  const chiaRootPath = getConfigRootDir();
+  const treeRootPath = getConfigRootDir();
   const appName = app.getName();
-  const userDataDir = path.join(chiaRootPath, 'gui', appName);
+  const userDataDir = path.join(treeRootPath, 'gui', appName);
   return userDataDir;
 }
 
 export function setUserDataDir(): void {
-  const chiaRootUserDataPath = getUserDataDir();
+  const treeRootUserDataPath = getUserDataDir();
 
   migrateUserDataIfNecessary();
 
-  console.info(`Setting user data directory to ${chiaRootUserDataPath}`);
-  app.setPath('userData', chiaRootUserDataPath);
+  console.info(`Setting user data directory to ${treeRootUserDataPath}`);
+  app.setPath('userData', treeRootUserDataPath);
 }
 
 export function migrateUserDataIfNecessary() {
   const defaultUserDataPath = app.getPath('userData');
-  const chiaRootUserDataPath = getUserDataDir();
+  const treeRootUserDataPath = getUserDataDir();
   const leveldbSrcPath = path.join(defaultUserDataPath, 'Local Storage', 'leveldb');
-  const leveldbDestPath = path.join(chiaRootUserDataPath, 'Local Storage', 'leveldb');
+  const leveldbDestPath = path.join(treeRootUserDataPath, 'Local Storage', 'leveldb');
   const leveldbMigratedMarker = path.join(leveldbSrcPath, 'migrated');
   const sourceExists = fs.existsSync(leveldbSrcPath);
   const destinationExists = fs.existsSync(leveldbDestPath);

@@ -1,14 +1,14 @@
-# chia-blockchain-gui/gui
+# tree-blockchain-gui/gui
 
-![Chia logo](https://www.chia.net/wp-content/uploads/2022/09/chia-logo.svg)
+![Tree logo](https://www.tree111.com/wp-content/uploads/2022/09/tree-logo.svg)
 
-![GitHub contributors](https://img.shields.io/github/contributors/Chia-Network/chia-blockchain-gui?logo=GitHub)
+![GitHub contributors](https://img.shields.io/github/contributors/Tree111-Network/tree-blockchain-gui?logo=GitHub)
 
-Chia GUI - written in TypeScript and uses Electron/React.
+Tree GUI - written in TypeScript and uses Electron/React.
 
 ## Development
 
-Please read and follow the main [README.md](https://github.com/Chia-Network/chia-blockchain-gui) of this monorepo.
+Please read and follow the main [README.md](https://github.com/Tree111-Network/tree-blockchain-gui) of this monorepo.
 
 ## Best practices
 

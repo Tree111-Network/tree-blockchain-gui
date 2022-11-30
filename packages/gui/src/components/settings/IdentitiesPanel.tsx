@@ -1,6 +1,6 @@
-import { WalletType } from '@chia/api';
-import { useGetDIDQuery, useGetWalletsQuery } from '@chia/api-react';
-import { CardListItem, Flex, Truncate } from '@chia/core';
+import { WalletType } from '@tree/api';
+import { useGetDIDQuery, useGetWalletsQuery } from '@tree/api-react';
+import { CardListItem, Flex, Truncate } from '@tree/core';
 import { Box, Card, CardContent, Typography } from '@mui/material';
 import { orderBy } from 'lodash';
 import React, { useMemo } from 'react';

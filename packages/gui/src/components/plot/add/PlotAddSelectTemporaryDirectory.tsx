@@ -1,5 +1,5 @@
-import { AdvancedOptions, ButtonSelected, CardStep, Flex, TextField, Checkbox, TooltipIcon } from '@chia/core';
-import { usePrefs } from '@chia/api-react';
+import { AdvancedOptions, ButtonSelected, CardStep, Flex, TextField, Checkbox, TooltipIcon } from '@tree/core';
+import { usePrefs } from '@tree/api-react';
 import { Trans } from '@lingui/macro';
 import { FormControl, FormControlLabel, Typography } from '@mui/material';
 import React from 'react';

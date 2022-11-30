@@ -1,5 +1,5 @@
-import { WalletType } from '@chia/api';
-import { useCreateOfferForIdsMutation, usePrefs } from '@chia/api-react';
+import { WalletType } from '@tree/api';
+import { useCreateOfferForIdsMutation, usePrefs } from '@tree/api-react';
 import {
   Back,
   Button,
@@ -9,9 +9,9 @@ import {
   Form,
   useOpenDialog,
   useShowError,
-  chiaToMojo,
+  treeToMojo,
   catToMojo,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { Grid } from '@mui/material';
 import BigNumber from 'bignumber.js';
@@ -80,7 +80,7 @@ function OfferEditor(props: OfferEditorProps) {
     if (assetWalletId > 0) {
       let mojoAmount = new BigNumber(0);
       if (walletType === WalletType.STANDARD_WALLET) {
-        mojoAmount = chiaToMojo(amount);
+        mojoAmount = treeToMojo(amount);
       } else if (walletType === WalletType.CAT) {
         mojoAmount = catToMojo(amount);
       }
@@ -96,7 +96,7 @@ function OfferEditor(props: OfferEditorProps) {
     let missingAssetSelection = false;
     let missingAmount = false;
     let amountExceedsSpendableBalance = false;
-    const feeInMojos = chiaToMojo(formData.fee ?? 0);
+    const feeInMojos = treeToMojo(formData.fee ?? 0);
 
     formData.makerRows.forEach((row: OfferEditorRowData) => {
       updateOffer(offer, row, true);

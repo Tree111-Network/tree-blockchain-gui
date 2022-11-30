@@ -1,5 +1,5 @@
-import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@chia/api-react';
-import { AlertDialog, Button, DialogActions, Flex, TooltipIcon, useOpenDialog, Suspender } from '@chia/core';
+import { useRemoveKeyringPassphraseMutation, useGetKeyringStatusQuery } from '@tree/api-react';
+import { AlertDialog, Button, DialogActions, Flex, TooltipIcon, useOpenDialog, Suspender } from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { KeyboardCapslock as KeyboardCapslockIcon, Visibility as VisibilityIcon } from '@mui/icons-material';
 import {

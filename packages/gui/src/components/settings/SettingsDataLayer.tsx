@@ -1,4 +1,4 @@
-import { Flex, SettingsLabel } from '@chia/core';
+import { Flex, SettingsLabel } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { FormGroup, FormControlLabel, Grid, Switch, Typography } from '@mui/material';
 import React from 'react';
@@ -41,7 +41,7 @@ export default function SettingsDataLayer() {
             )}
           </FormGroup>
           <Typography variant="body2" color="textSecondary">
-            <Trans>Changes will take effect the next time Chia is started</Trans>
+            <Trans>Changes will take effect the next time Tree is started</Trans>
           </Typography>
         </Flex>
       </Grid>

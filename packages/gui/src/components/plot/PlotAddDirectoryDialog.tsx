@@ -2,8 +2,8 @@ import {
   useAddPlotDirectoryMutation,
   useRemovePlotDirectoryMutation,
   useGetPlotDirectoriesQuery,
-} from '@chia/api-react';
-import { useShowError, Button, Suspender } from '@chia/core';
+} from '@tree/api-react';
+import { useShowError, Button, Suspender } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Folder as FolderIcon, Delete as DeleteIcon } from '@mui/icons-material';
 import {

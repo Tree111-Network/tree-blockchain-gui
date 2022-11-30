@@ -2,7 +2,7 @@ import {
   useGetKeyringStatusQuery,
   useRemoveKeyringPassphraseMutation,
   useSetKeyringPassphraseMutation,
-} from '@chia/api-react';
+} from '@tree/api-react';
 import {
   AlertDialog,
   Button,
@@ -11,7 +11,7 @@ import {
   useOpenDialog,
   Suspender,
   useValidateChangePassphraseParams,
-} from '@chia/core';
+} from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import {
   Help as HelpIcon,
@@ -285,7 +285,7 @@ export default function ChangePassphrasePrompt(props: Props) {
               style={{ marginRight: '8px' }}
             />
             <Tooltip
-              title={t`Your passphrase can be stored in your system's secure credential store. Chia will be able to access your keys without prompting for your passphrase.`}
+              title={t`Your passphrase can be stored in your system's secure credential store. Tree will be able to access your keys without prompting for your passphrase.`}
             >
               <HelpIcon style={{ color: '#c8c8c8', fontSize: 12 }} />
             </Tooltip>

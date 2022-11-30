@@ -1,4 +1,4 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@tree/api';
 
 import { getNFTInbox } from './utils';
 
@@ -36,7 +36,7 @@ describe('utils', () => {
         {
           id: 1,
           type: WalletType.STANDARD_WALLET,
-          name: 'Chia',
+          name: 'Tree',
         },
         {
           id: 2,
@@ -53,7 +53,7 @@ describe('utils', () => {
         {
           id: 1,
           type: WalletType.STANDARD_WALLET,
-          name: 'Chia',
+          name: 'Tree',
         },
         {
           id: 2,

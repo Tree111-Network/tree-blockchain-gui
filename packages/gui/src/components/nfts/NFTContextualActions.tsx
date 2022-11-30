@@ -1,7 +1,7 @@
-import type { NFTInfo } from '@chia/api';
-import { useSetNFTStatusMutation, useLocalStorage } from '@chia/api-react';
-import { AlertDialog, DropdownActions, MenuItem, useOpenDialog } from '@chia/core';
-import { LinkSmall as LinkSmallIcon, NFTsSmall as NFTsSmallIcon, OffersSmall as OffersSmallIcon } from '@chia/icons';
+import type { NFTInfo } from '@tree/api';
+import { useSetNFTStatusMutation, useLocalStorage } from '@tree/api-react';
+import { AlertDialog, DropdownActions, MenuItem, useOpenDialog } from '@tree/core';
+import { LinkSmall as LinkSmallIcon, NFTsSmall as NFTsSmallIcon, OffersSmall as OffersSmallIcon } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import {
   ArrowForward as TransferIcon,

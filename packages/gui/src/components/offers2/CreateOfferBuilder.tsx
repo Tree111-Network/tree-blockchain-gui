@@ -1,6 +1,6 @@
-import { WalletType } from '@chia/api';
-import { useGetWalletsQuery, useCreateOfferForIdsMutation, usePrefs } from '@chia/api-react';
-import { Flex, ButtonLoading, useOpenDialog, Loading } from '@chia/core';
+import { WalletType } from '@tree/api';
+import { useGetWalletsQuery, useCreateOfferForIdsMutation, usePrefs } from '@tree/api-react';
+import { Flex, ButtonLoading, useOpenDialog, Loading } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import { Grid } from '@mui/material';
 import React, { useRef, useMemo } from 'react';

@@ -1,4 +1,4 @@
-import { Flex } from '@chia/core';
+import { Flex } from '@tree/core';
 import { Add } from '@mui/icons-material';
 import { Box, IconButton, Collapse, Typography } from '@mui/material';
 import React, { ReactNode, ReactElement, cloneElement, MouseEvent } from 'react';

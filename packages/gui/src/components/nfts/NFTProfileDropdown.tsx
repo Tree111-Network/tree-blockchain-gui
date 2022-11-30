@@ -1,7 +1,7 @@
-import type { Wallet } from '@chia/api';
-import { useGetDIDsQuery, useGetNFTWallets, useGetNFTWalletsWithDIDsQuery } from '@chia/api-react';
-import { DropdownActions, MenuItem } from '@chia/core';
-import { NFTsSmall as NFTsSmallIcon } from '@chia/icons';
+import type { Wallet } from '@tree/api';
+import { useGetDIDsQuery, useGetNFTWallets, useGetNFTWalletsWithDIDsQuery } from '@tree/api-react';
+import { DropdownActions, MenuItem } from '@tree/core';
+import { NFTsSmall as NFTsSmallIcon } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { AutoAwesome as AutoAwesomeIcon, PermIdentity as PermIdentityIcon } from '@mui/icons-material';
 import { ListItemIcon } from '@mui/material';

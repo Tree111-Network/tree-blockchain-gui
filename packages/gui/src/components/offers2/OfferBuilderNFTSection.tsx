@@ -1,5 +1,5 @@
-import { Flex } from '@chia/core';
-import { NFTs } from '@chia/icons';
+import { Flex } from '@tree/core';
+import { NFTs } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 import { useFieldArray } from 'react-hook-form';

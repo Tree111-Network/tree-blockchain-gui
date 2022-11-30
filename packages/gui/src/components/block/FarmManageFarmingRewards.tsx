@@ -1,5 +1,5 @@
-import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@chia/api-react';
-import { Button, Flex, Form, TextField, Loading } from '@chia/core';
+import { useSetRewardTargetsMutation, useGetRewardTargetsQuery } from '@tree/api-react';
+import { Button, Flex, Form, TextField, Loading } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Alert, Dialog, DialogActions, DialogTitle, DialogContent, Typography } from '@mui/material';
 import { bech32m } from 'bech32';

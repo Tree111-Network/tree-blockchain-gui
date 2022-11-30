@@ -1,5 +1,5 @@
-import { WalletType } from '@chia/api';
-import { useGetLoggedInFingerprintQuery, useGetPrivateKeyQuery, useGetWalletsQuery } from '@chia/api-react';
+import { WalletType } from '@tree/api';
+import { useGetLoggedInFingerprintQuery, useGetPrivateKeyQuery, useGetWalletsQuery } from '@tree/api-react';
 import {
   Flex,
   CardListItem,
@@ -8,7 +8,7 @@ import {
   useColorModeValue,
   useOpenExternal,
   FormatLargeNumber,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Box, Typography, Button } from '@mui/material';
 import { orderBy } from 'lodash';
@@ -95,7 +95,7 @@ export default function WalletsSidebar() {
   );
 
   function handleOpenBlogPost() {
-    openExternal('https://www.chia.net/cat2blog');
+    openExternal('https://www.tree111.com/cat2blog');
   }
 
   function openTokensInfoDialog() {
@@ -123,7 +123,7 @@ export default function WalletsSidebar() {
                 variant="outlined"
                 size="large"
                 onClick={() =>
-                  openExternal(`https://cat1.chia.net/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
+                  openExternal(`https://cat1.tree111.com/#publicKey=${privateKey.pk}&fingerprint=${fingerprint}`)
                 }
                 disabled={isLoadingFingerprint || isLoadingPrivateKey}
               >
@@ -137,7 +137,7 @@ export default function WalletsSidebar() {
           <p>
             <Trans>Want to see your old balance for yourself?</Trans>
           </p>
-          <Link target="_blank" href="https://www.chia.net/download/">
+          <Link target="_blank" href="https://www.tree111.com/download/">
             <Trans>Click here to download an older version of the wallet</Trans>
           </Link>
         </ContentStyled>

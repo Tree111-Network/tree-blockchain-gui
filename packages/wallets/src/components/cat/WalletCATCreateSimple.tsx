@@ -1,7 +1,7 @@
-import type { CATToken } from '@chia/api';
-import { SyncingStatus } from '@chia/api';
-import { useGetWalletsQuery, useAddCATTokenMutation, useGetCatListQuery } from '@chia/api-react';
-import { Back, Flex, Loading, useShowError } from '@chia/core';
+import type { CATToken } from '@tree/api';
+import { SyncingStatus } from '@tree/api';
+import { useGetWalletsQuery, useAddCATTokenMutation, useGetCatListQuery } from '@tree/api-react';
+import { Back, Flex, Loading, useShowError } from '@tree/core';
 import { Trans, t } from '@lingui/macro';
 import { Add as AddIcon } from '@mui/icons-material';
 import { Grid } from '@mui/material';

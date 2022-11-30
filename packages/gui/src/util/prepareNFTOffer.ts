@@ -1,5 +1,5 @@
-import type { NFTInfo } from '@chia/api';
-import { store, walletApi } from '@chia/api-react';
+import type { NFTInfo } from '@tree/api';
+import { store, walletApi } from '@tree/api-react';
 import BigNumber from 'bignumber.js';
 
 import type Driver from '../@types/Driver';

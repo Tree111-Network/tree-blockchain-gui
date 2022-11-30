@@ -1,4 +1,4 @@
-import { StateColor } from '@chia/core';
+import { StateColor } from '@tree/core';
 import { FiberManualRecord as FiberManualRecordIcon } from '@mui/icons-material';
 import React, { forwardRef } from 'react';
 import styled from 'styled-components';

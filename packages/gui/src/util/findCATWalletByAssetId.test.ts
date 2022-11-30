@@ -1,4 +1,4 @@
-import { WalletType } from '@chia/api';
+import { WalletType } from '@tree/api';
 
 import findCATWalletByAssetId from './findCATWalletByAssetId';
 

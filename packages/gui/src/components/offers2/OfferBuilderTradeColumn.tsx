@@ -1,5 +1,5 @@
-import { Flex } from '@chia/core';
-import { Offering, Requesting } from '@chia/icons';
+import { Flex } from '@tree/core';
+import { Offering, Requesting } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 import { useWatch } from 'react-hook-form';

@@ -1,5 +1,5 @@
-import { useGetWalletsQuery, useCheckOfferValidityMutation } from '@chia/api-react';
-import { Flex, ButtonLoading, Link, Loading, useShowError } from '@chia/core';
+import { useGetWalletsQuery, useCheckOfferValidityMutation } from '@tree/api-react';
+import { Flex, ButtonLoading, Link, Loading, useShowError } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Alert, Grid } from '@mui/material';
 import React, { useEffect, useMemo, useRef, useState } from 'react';

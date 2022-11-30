@@ -1,5 +1,5 @@
-import { useGenerateMnemonicMutation, useAddPrivateKeyMutation, useLogInMutation } from '@chia/api-react';
-import { ButtonLoading, Form, TextField, Flex, Loading, Logo, useShowError } from '@chia/core';
+import { useGenerateMnemonicMutation, useAddPrivateKeyMutation, useLogInMutation } from '@tree/api-react';
+import { ButtonLoading, Form, TextField, Flex, Loading, Logo, useShowError } from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { TextField as TextFieldMaterial, Typography, Grid, Container } from '@mui/material';
 import React from 'react';

@@ -1,5 +1,5 @@
-import { WalletType } from '@chia/api';
-import type { Wallet } from '@chia/api';
+import { WalletType } from '@tree/api';
+import type { Wallet } from '@tree/api';
 
 /**
  * Locate the NFT "inbox" from a list of NFT wallets. The inbox is the NFT wallet

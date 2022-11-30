@@ -1,5 +1,5 @@
-import { Button, CardHero } from '@chia/core';
-import { Pooling } from '@chia/icons';
+import { Button, CardHero } from '@tree/core';
+import { Pooling } from '@tree/icons';
 import { Trans } from '@lingui/macro';
 import { Grid, Typography } from '@mui/material';
 import React from 'react';

@@ -1,5 +1,5 @@
-import { OfferSummaryRecord, OfferTradeRecord, OfferCoinOfInterest } from '@chia/api';
-import { useCheckOfferValidityMutation } from '@chia/api-react';
+import { OfferSummaryRecord, OfferTradeRecord, OfferCoinOfInterest } from '@tree/api';
+import { useCheckOfferValidityMutation } from '@tree/api-react';
 import {
   Back,
   ButtonLoading,
@@ -12,8 +12,8 @@ import {
   TableControlled,
   TooltipIcon,
   useShowError,
-  mojoToChiaLocaleString,
-} from '@chia/core';
+  mojoToTreeLocaleString,
+} from '@tree/core';
 import { Trans, Plural } from '@lingui/macro';
 import {
   Box,
@@ -168,7 +168,7 @@ function OfferDetails(props: OfferDetailsProps) {
       field: (coin: OfferCoinOfInterest) => (
         <Typography variant="body2">
           <Flex flexDirection="row" flexGrow={1} gap={1}>
-            {mojoToChiaLocaleString(coin.amount)}
+            {mojoToTreeLocaleString(coin.amount)}
           </Flex>
         </Typography>
       ),

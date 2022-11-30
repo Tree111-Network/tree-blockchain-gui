@@ -1,5 +1,5 @@
-import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@chia/api-react';
-import { CopyToClipboard, Loading, Flex } from '@chia/core';
+import { useGetCurrentAddressQuery, useGetNextAddressMutation } from '@tree/api-react';
+import { CopyToClipboard, Loading, Flex } from '@tree/core';
 import { t, Trans } from '@lingui/macro';
 import { Autorenew } from '@mui/icons-material';
 import { TextField, InputAdornment, IconButton } from '@mui/material';

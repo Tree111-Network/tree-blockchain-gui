@@ -1,4 +1,4 @@
-import { useGetKeyringStatusQuery } from '@chia/api-react';
+import { useGetKeyringStatusQuery } from '@tree/api-react';
 import { t, plural, Trans } from '@lingui/macro';
 import React from 'react';
 

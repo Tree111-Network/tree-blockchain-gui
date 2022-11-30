@@ -1,4 +1,4 @@
-import { useWallet } from '@chia/wallets';
+import { useWallet } from '@tree/wallets';
 import { Trans } from '@lingui/macro';
 import React from 'react';
 

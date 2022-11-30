@@ -1,4 +1,4 @@
-import { Wallet, WalletType } from '@chia/api';
+import { Wallet, WalletType } from '@tree/api';
 import { useMemo } from 'react';
 
 import { useGetWalletsQuery } from '../services';

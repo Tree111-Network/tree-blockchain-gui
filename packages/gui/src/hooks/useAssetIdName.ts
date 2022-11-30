@@ -1,6 +1,6 @@
-import { WalletType } from '@chia/api';
-import { useGetCatListQuery, useGetWalletsQuery } from '@chia/api-react';
-import { CATToken, Wallet, useCurrencyCode } from '@chia/core';
+import { WalletType } from '@tree/api';
+import { useGetCatListQuery, useGetWalletsQuery } from '@tree/api-react';
+import { CATToken, Wallet, useCurrencyCode } from '@tree/core';
 import { useMemo } from 'react';
 
 export type AssetIdMapEntry = {
@@ -35,7 +35,7 @@ export default function useAssetIdName() {
 
       if (walletType === WalletType.STANDARD_WALLET) {
         assetId = 'xch';
-        name = 'Chia';
+        name = 'Tree';
         symbol = currencyCode;
         isVerified = true;
       } else if (walletType === WalletType.CAT) {
@@ -89,7 +89,7 @@ export default function useAssetIdName() {
     // If using testnet, add a TXCH assetId entry
     if (currencyCode === 'TXCH') {
       const assetId = 'txch';
-      const name = 'Chia (Testnet)';
+      const name = 'Tree (Testnet)';
       const symbol = 'TXCH';
       const displayName = symbol || name;
       const entry: AssetIdMapEntry = {

@@ -1,5 +1,5 @@
-import { type NFTInfo } from '@chia/api';
-import { useTransferNFTMutation } from '@chia/api-react';
+import { type NFTInfo } from '@tree/api';
+import { useTransferNFTMutation } from '@tree/api-react';
 import {
   Button,
   ButtonLoading,
@@ -7,10 +7,10 @@ import {
   Form,
   Flex,
   TextField,
-  chiaToMojo,
+  treeToMojo,
   useOpenDialog,
   useShowError,
-} from '@chia/core';
+} from '@tree/core';
 import { Trans } from '@lingui/macro';
 import { Alert, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Typography } from '@mui/material';
 import React, { useEffect } from 'react';
@@ -86,7 +86,7 @@ export default function NFTBurnDialog(props: NFTPreviewDialogProps) {
     }
 
     try {
-      const feeInMojos = chiaToMojo(fee || 0);
+      const feeInMojos = treeToMojo(fee || 0);
 
       await transferNFT({
         walletId: nft.walletId,

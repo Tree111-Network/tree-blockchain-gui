@@ -1,4 +1,4 @@
-import { mojoToCAT, mojoToChia } from '@chia/core';
+import { mojoToCAT, mojoToTree } from '@tree/core';
 import BigNumber from 'bignumber.js';
 
 import type OfferBuilderData from '../@types/OfferBuilderData';
@@ -32,7 +32,7 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
       });
     } else if (id === 'xch') {
       offeredXch.push({
-        amount: mojoToChia(amount).toFixed(),
+        amount: mojoToTree(amount).toFixed(),
       });
     }
   });
@@ -52,7 +52,7 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
       });
     } else if (id === 'xch') {
       requestedXch.push({
-        amount: mojoToChia(amount).toFixed(),
+        amount: mojoToTree(amount).toFixed(),
       });
     }
   });
@@ -70,7 +70,7 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
       nfts: requestedNfts,
       fee: [
         {
-          amount: mojoToChia(fees).toFixed(),
+          amount: mojoToTree(fees).toFixed(),
         },
       ],
     },
