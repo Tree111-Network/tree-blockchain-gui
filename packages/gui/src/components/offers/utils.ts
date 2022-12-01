@@ -40,7 +40,7 @@ export function summaryStringsForNFTOffer(
   builder: (filename: string, args: [assetInfo: AssetIdMapEntry | undefined, amount: string]) => string
 ): [makerString: string, takerString: string] {
   // const makerAssetType = offerAssetTypeForAssetId
-  // TODO: Remove 1:1 NFT <--> XCH assumption
+  // TODO: Remove 1:1 NFT <--> TREE111 assumption
   const makerEntry: [string, string] = Object.entries(summary.offered)[0];
   const takerEntry: [string, string] = Object.entries(summary.requested)[0];
   const makerAssetType = offerAssetTypeForAssetId(makerEntry[0], summary);
@@ -206,7 +206,7 @@ export function offerContainsAssetOfType(offerSummary: OfferSummaryRecord, asset
 export function offerAssetTypeForAssetId(assetId: string, offerSummary: OfferSummaryRecord): OfferAsset | undefined {
   let assetType: OfferAsset | undefined;
 
-  if (['xch', 'txch'].includes(assetId)) {
+  if (['tree111', 'ttree111'].includes(assetId)) {
     assetType = OfferAsset.TREE;
   } else {
     const { infos } = offerSummary;
@@ -231,7 +231,7 @@ export function offerAssetTypeForAssetId(assetId: string, offerSummary: OfferSum
 
 export function offerAssetIdForAssetType(assetType: OfferAsset, offerSummary: OfferSummaryRecord): string | undefined {
   if (assetType === OfferAsset.TREE) {
-    return 'xch';
+    return 'tree111';
   }
 
   const assetId = Object.keys(offerSummary.infos).find(

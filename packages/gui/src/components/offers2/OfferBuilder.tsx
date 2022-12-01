@@ -10,13 +10,13 @@ import OfferBuilderTradeColumn from './OfferBuilderTradeColumn';
 
 export const emptyDefaultValues = {
   offered: {
-    xch: [],
+    tree111: [],
     tokens: [],
     nfts: [],
     fee: [],
   },
   requested: {
-    xch: [],
+    tree111: [],
     tokens: [],
     nfts: [],
     fee: [],

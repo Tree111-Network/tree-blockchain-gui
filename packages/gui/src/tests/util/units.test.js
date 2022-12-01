@@ -112,14 +112,14 @@ describe('units', () => {
     });
     it('updates an existing display', () => {
       units.setDisplay('tree', {
-        format: '{amount} TXCH',
+        format: '{amount} TTREE111',
         fractionDigits: 0,
       });
 
       const result = units.getDisplay('tree');
 
       expect(result).toEqual({
-        format: '{amount} TXCH',
+        format: '{amount} TTREE111',
         fractionDigits: 0,
       });
     });

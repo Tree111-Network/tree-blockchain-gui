@@ -758,8 +758,8 @@ msgid "Syncing"
 msgstr "Synchronizace"
 
 #: src/components/card/WalletCardTotalBalance.tsx:77
-msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XCH, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
-msgstr "Derivační index nastavuje rozsah adres peněženky, pro které peněženka skenuje blockchain. Toto číslo je obecně vyšší, pokud máte spoustu transakcí nebo zrušených nabídek pro XCH, CAT, nebo NFT. Pokud se domníváte, že Váš zůstatek je nesprávný, protože chybí mince, pak zvýšení derivačního indexu může pomoci peněžence zahrnout chybějící mince do celkového zůstatku."
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for TREE111, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgstr "Derivační index nastavuje rozsah adres peněženky, pro které peněženka skenuje blockchain. Toto číslo je obecně vyšší, pokud máte spoustu transakcí nebo zrušených nabídek pro TREE111, CAT, nebo NFT. Pokud se domníváte, že Váš zůstatek je nesprávný, protože chybí mince, pak zvýšení derivačního indexu může pomoci peněžence zahrnout chybějící mince do celkového zůstatku."
 
 #: src/components/cat/WalletDID.tsx:789
 #: src/components/did/WalletDID.tsx:789

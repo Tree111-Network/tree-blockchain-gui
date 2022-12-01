@@ -14,7 +14,7 @@ import OfferBuilder, { emptyDefaultValues } from './OfferBuilder';
 import OfferNavigationHeader from './OfferNavigationHeader';
 
 type createDefaultValuesParams = {
-  walletType?: WalletType; // CAT or STANDARD_WALLET (XCH), indicates whether a token or CAT has a default entry
+  walletType?: WalletType; // CAT or STANDARD_WALLET (TREE111), indicates whether a token or CAT has a default entry
   assetId?: string; // Asset ID of the CAT
   nftId?: string; // NFT to include in the offer by default
   nftWalletId?: number; // If set, indicates that we are offering the NFT, otherwise we are requesting it
@@ -28,7 +28,7 @@ export function createDefaultValues(params: createDefaultValuesParams): OfferBui
     offered: {
       ...emptyDefaultValues.offered,
       nfts: nftId && nftWalletId ? [{ nftId }] : [],
-      xch: walletType === WalletType.STANDARD_WALLET ? [{ amount: '' }] : [],
+      tree111: walletType === WalletType.STANDARD_WALLET ? [{ amount: '' }] : [],
       tokens: walletType === WalletType.CAT && assetId ? [{ assetId, amount: '' }] : [],
     },
     requested: {

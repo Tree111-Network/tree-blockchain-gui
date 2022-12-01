@@ -1,5 +1,5 @@
 enum OfferBuilderSectionType {
-  XCH = 'XCH',
+  TREE111 = 'TREE111',
   TOKENS = 'TOKENS',
   NFTS = 'NFTS',
   FEE = 'FEE',

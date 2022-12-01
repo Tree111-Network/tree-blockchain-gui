@@ -8,10 +8,10 @@ import { launcherIdToNFTId } from './nfts';
 export default function offerToOfferBuilderData(offerSummary: OfferSummary): OfferBuilderData {
   const { fees, offered, requested, infos } = offerSummary;
 
-  const offeredXch: OfferBuilderData['offered']['xch'] = [];
+  const offeredTREE111: OfferBuilderData['offered']['tree111'] = [];
   const offeredTokens: OfferBuilderData['offered']['tokens'] = [];
   const offeredNfts: OfferBuilderData['offered']['nfts'] = [];
-  const requestedXch: OfferBuilderData['requested']['xch'] = [];
+  const requestedTREE111: OfferBuilderData['requested']['tree111'] = [];
   const requestedTokens: OfferBuilderData['requested']['tokens'] = [];
   const requestedNfts: OfferBuilderData['requested']['nfts'] = [];
 
@@ -30,8 +30,8 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
       offeredNfts.push({
         nftId: launcherIdToNFTId(info.launcherId),
       });
-    } else if (id === 'xch') {
-      offeredXch.push({
+    } else if (id === 'tree111') {
+      offeredTREE111.push({
         amount: mojoToTree(amount).toFixed(),
       });
     }
@@ -50,8 +50,8 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
       requestedNfts.push({
         nftId: launcherIdToNFTId(info.launcherId),
       });
-    } else if (id === 'xch') {
-      requestedXch.push({
+    } else if (id === 'tree111') {
+      requestedTREE111.push({
         amount: mojoToTree(amount).toFixed(),
       });
     }
@@ -59,13 +59,13 @@ export default function offerToOfferBuilderData(offerSummary: OfferSummary): Off
 
   return {
     offered: {
-      xch: offeredXch,
+      tree111: offeredTREE111,
       tokens: offeredTokens,
       nfts: offeredNfts,
       fee: [],
     },
     requested: {
-      xch: requestedXch,
+      tree111: requestedTREE111,
       tokens: requestedTokens,
       nfts: requestedNfts,
       fee: [

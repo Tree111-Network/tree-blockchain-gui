@@ -1,6 +1,6 @@
 const mockedDefaultValue: OfferBuilderData = {
   offered: {
-    xch: [
+    tree111: [
       {
         amount: '0.3',
       },
@@ -31,7 +31,7 @@ const mockedDefaultValue: OfferBuilderData = {
     ],
   },
   requested: {
-    xch: [],
+    tree111: [],
     tokens: [],
     nfts: [
       {

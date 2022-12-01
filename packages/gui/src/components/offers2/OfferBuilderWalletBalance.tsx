@@ -20,7 +20,7 @@ export default function OfferBuilderWalletBalance(props: OfferBuilderWalletBalan
 
   const isLoading = isLoadingWalletBalance || loading;
 
-  const xchBalance = useMemo(() => {
+  const tree111Balance = useMemo(() => {
     if (isLoading || !wallet || !walletBalance || !('spendableBalance' in walletBalance)) {
       return undefined;
     }
@@ -36,7 +36,7 @@ export default function OfferBuilderWalletBalance(props: OfferBuilderWalletBalan
     return undefined;
   }, [isLoading, wallet, walletBalance, walletBalance?.spendableBalance, locale]);
 
-  if (!isLoading && xchBalance === undefined) {
+  if (!isLoading && tree111Balance === undefined) {
     return null;
   }
 
@@ -47,7 +47,7 @@ export default function OfferBuilderWalletBalance(props: OfferBuilderWalletBalan
         'Loading...'
       ) : (
         <>
-          {xchBalance}
+          {tree111Balance}
           &nbsp;
           {unit?.toUpperCase()}
         </>

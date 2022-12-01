@@ -41,7 +41,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         title={<Trans>Create a Plot NFT</Trans>}
         description={
           <Trans>
-            Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less
+            Join a pool and get consistent TREE111 farming rewards. The average returns are the same, but it is much less
             volatile.
           </Trans>
         }
@@ -122,7 +122,7 @@ const PlotAddNFT = forwardRef((props: Props, ref) => {
         <>
           <Typography variant="subtitle1">
             <Trans>
-              Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a
+              Join a pool and get more consistent TREE111 farming rewards. Create a plot NFT and assign your new plots to a
               group.
             </Trans>
           </Typography>

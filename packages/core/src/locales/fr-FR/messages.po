@@ -466,8 +466,8 @@ msgid "{0, plural, one {mojo} other {mojos}}"
 msgstr "{0, plural, one {mojo} other {mojos}}"
 
 #: src/components/EstimatedFee/EstimatedFee.tsx:159
-msgid "{0} TXCH"
-msgstr "{0} TXCH"
+msgid "{0} TTREE111"
+msgstr "{0} TTREE111"
 
 #: src/hooks/useValidateChangePassphraseParams.tsx:39
 msgid "{minPassphraseLength, plural, one {Passphrases must be at least # character in length} other {Passphrases must be at least # characters in length}}"

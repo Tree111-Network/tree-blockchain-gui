@@ -34,7 +34,7 @@ export default function useAssetIdName() {
       let isVerified = false;
 
       if (walletType === WalletType.STANDARD_WALLET) {
-        assetId = 'xch';
+        assetId = 'tree111';
         name = 'Tree';
         symbol = currencyCode;
         isVerified = true;
@@ -86,11 +86,11 @@ export default function useAssetIdName() {
       assetIdNameMapping.set(assetId, entry);
     });
 
-    // If using testnet, add a TXCH assetId entry
-    if (currencyCode === 'TXCH') {
-      const assetId = 'txch';
+    // If using testnet, add a TTREE111 assetId entry
+    if (currencyCode === 'TTREE111') {
+      const assetId = 'ttree111';
       const name = 'Tree (Testnet)';
-      const symbol = 'TXCH';
+      const symbol = 'TTREE111';
       const displayName = symbol || name;
       const entry: AssetIdMapEntry = {
         walletId: 1,

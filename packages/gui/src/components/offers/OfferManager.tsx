@@ -85,9 +85,9 @@ function ConfirmOfferCancellation(props: ConfirmOfferCancellationProps) {
   }
 
   async function handleConfirm() {
-    const { fee: xchFee } = methods.getValues();
+    const { fee: tree111Fee } = methods.getValues();
 
-    const fee = cancelWithTransaction ? treeToMojo(xchFee) : new BigNumber(0);
+    const fee = cancelWithTransaction ? treeToMojo(tree111Fee) : new BigNumber(0);
 
     onClose([true, { cancelWithTransaction, cancellationFee: fee }]);
   }
@@ -217,7 +217,7 @@ function OfferList(props: OfferListProps) {
   const [saveOffer] = useSaveOfferFile();
   const { isLoading: isLoadingWallets } = useGetWalletsQuery();
   const { lookupByAssetId } = useAssetIdName();
-  const testnet = useCurrencyCode() === 'TXCH';
+  const testnet = useCurrencyCode() === 'TTREE111';
   const openDialog = useOpenDialog();
   const { navigate } = useSerializedNavigationState();
   const {
@@ -469,7 +469,7 @@ export function OfferManager() {
                       </Typography>
                       <Typography variant="body1" color="textSecondary">
                         <Trans>
-                          Create a file that you can use to trade XCH, Tree Asset Tokens, or NFTs with no counter-party
+                          Create a file that you can use to trade TREE111, Tree Asset Tokens, or NFTs with no counter-party
                           risk.
                         </Trans>
                       </Typography>
@@ -507,7 +507,7 @@ export function CreateOffer() {
   const locationState = getLocationState(); // For cases where we know that the state has been serialized
   const openDialog = useOpenDialog();
   const [saveOffer] = useSaveOfferFile();
-  const testnet = useCurrencyCode() === 'TXCH';
+  const testnet = useCurrencyCode() === 'TTREE111';
 
   async function handleOfferCreated(obj: { offerRecord: any; offerData: any }) {
     const { offerRecord, offerData } = obj;

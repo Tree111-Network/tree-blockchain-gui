@@ -83,7 +83,7 @@ export default function PlotNFTSelectBase(props: Props) {
                 <Flex gap={1} flexDirection="column">
                   <FormControlLabel
                     control={<Radio />}
-                    label={<Trans>Self pool. When you win a block you will earn XCH rewards.</Trans>}
+                    label={<Trans>Self pool. When you win a block you will earn TREE111 rewards.</Trans>}
                     value
                   />
                   <Flex gap={2}>

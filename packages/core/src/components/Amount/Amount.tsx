@@ -36,7 +36,7 @@ export default function Amount(props: AmountProps) {
   const correctedValue = value && value[0] === '.' ? `0${value}` : value;
 
   const currencyCode = symbol === undefined ? defaultCurrencyCode : symbol;
-  const isTreeCurrency = ['XCH', 'TXCH'].includes(currencyCode);
+  const isTreeCurrency = ['TREE111', 'TTREE111'].includes(currencyCode);
   const mojo = isTreeCurrency ? treeToMojo(correctedValue) : catToMojo(correctedValue);
 
   return (

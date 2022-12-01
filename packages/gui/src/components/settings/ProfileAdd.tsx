@@ -78,7 +78,7 @@ export default function ProfileAdd() {
         <StyledCard>
           <Flex flexDirection="column" gap={2.5} paddingBottom={1}>
             <Trans>
-              <strong>Need some XCH?</strong>
+              <strong>Need some TREE111?</strong>
             </Trans>
           </Flex>
           <div style={{ cursor: 'pointer' }}>
@@ -95,7 +95,7 @@ export default function ProfileAdd() {
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={3}>
             <Typography variant="caption">
-              <Trans>Balance: {standardBalance} XCH</Trans>
+              <Trans>Balance: {standardBalance} TREE111</Trans>
             </Typography>
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={1}>
@@ -111,7 +111,7 @@ export default function ProfileAdd() {
           </Flex>
           <Flex flexDirection="column" gap={2.5} paddingBottom={3}>
             <Typography variant="caption">
-              <Trans>Recommended: 0.000005 XCH</Trans>
+              <Trans>Recommended: 0.000005 TREE111</Trans>
             </Typography>
           </Flex>
           <Flex justifyContent="flex-end">

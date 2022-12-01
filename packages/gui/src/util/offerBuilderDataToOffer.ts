@@ -22,8 +22,8 @@ export default async function offerBuilderDataToOffer(
   validateOnly?: boolean;
 }> {
   const {
-    offered: { xch: offeredXch = [], tokens: offeredTokens = [], nfts: offeredNfts = [], fee: [firstFee] = [] },
-    requested: { xch: requestedXch = [], tokens: requestedTokens = [], nfts: requestedNfts = [] },
+    offered: { tree111: offeredTREE111 = [], tokens: offeredTokens = [], nfts: offeredNfts = [], fee: [firstFee] = [] },
+    requested: { tree111: requestedTREE111 = [], tokens: requestedTokens = [], nfts: requestedNfts = [] },
   } = data;
 
   const usedNFTs: string[] = [];
@@ -33,8 +33,8 @@ export default async function offerBuilderDataToOffer(
   const walletIdsAndAmounts: Record<string, BigNumber> = {};
   const driverDict: Record<string, Driver> = {};
 
-  const hasOffer = !!offeredXch.length || !!offeredTokens.length || !!offeredNfts.length;
-  const hasRequest = !!requestedXch.length || !!requestedTokens.length || !!requestedNfts.length;
+  const hasOffer = !!offeredTREE111.length || !!offeredTokens.length || !!offeredNfts.length;
+  const hasRequest = !!requestedTREE111.length || !!requestedTokens.length || !!requestedNfts.length;
 
   if (!hasRequest) {
     throw new Error(t`Please specify at least one requested asset`);
@@ -45,10 +45,10 @@ export default async function offerBuilderDataToOffer(
   }
 
   await Promise.all(
-    offeredXch.map(async (xch) => {
-      const { amount } = xch;
+    offeredTREE111.map(async (tree111) => {
+      const { amount } = tree111;
       if (!amount || amount === '0') {
-        throw new Error(t`Please enter an XCH amount`);
+        throw new Error(t`Please enter an TREE111 amount`);
       }
 
       const wallet = wallets.find((w) => w.type === WalletType.STANDARD_WALLET);
@@ -61,7 +61,7 @@ export default async function offerBuilderDataToOffer(
 
       const hasEnoughBalance = await hasSpendableBalance(wallet.id, mojoAmount);
       if (!hasEnoughBalance) {
-        throw new Error(t`Amount exceeds XCH spendable balance`);
+        throw new Error(t`Amount exceeds TREE111 spendable balance`);
       }
     })
   );
@@ -110,10 +110,10 @@ export default async function offerBuilderDataToOffer(
   );
 
   // requested
-  requestedXch.forEach((xch) => {
-    const { amount } = xch;
+  requestedTREE111.forEach((tree111) => {
+    const { amount } = tree111;
     if (!amount || amount === '0') {
-      throw new Error(t`Please enter an XCH amount`);
+      throw new Error(t`Please enter an TREE111 amount`);
     }
 
     const wallet = wallets.find((w) => w.type === WalletType.STANDARD_WALLET);

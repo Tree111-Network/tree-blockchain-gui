@@ -29,12 +29,12 @@ export default function OfferBuilderProvider(props: OfferBuilderProviderProps) {
     name: 'offered.nfts',
   })?.map(({ nftId }) => nftId);
 
-  const requestedXCH = useWatch({
-    name: 'requested.xch',
+  const requestedTREE111 = useWatch({
+    name: 'requested.tree111',
   });
 
-  const offeredXCH = useWatch({
-    name: 'offered.xch',
+  const offeredTREE111 = useWatch({
+    name: 'offered.tree111',
   });
 
   const requestedTokens = useWatch({
@@ -83,18 +83,18 @@ export default function OfferBuilderProvider(props: OfferBuilderProviderProps) {
     .map((nft: NFTInfo) => royaltyAssetFromNFTInfo(nft));
 
   const requestedFungibleAssets = [
-    ...(requestedXCH ?? [])
+    ...(requestedTREE111 ?? [])
       .filter(({ amount }) => amount > 0)
-      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', treeToMojo(amount))),
+      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('tree111', treeToMojo(amount))),
     ...(requestedTokens ?? [])
       .filter(({ assetId, amount }) => assetId?.length > 0 && amount > 0)
       .map(({ amount, assetId }) => fungibleAssetFromAssetIdAndAmount(assetId, catToMojo(amount))),
   ];
 
   const offeredFungibleAssets = [
-    ...(offeredXCH ?? [])
+    ...(offeredTREE111 ?? [])
       .filter(({ amount }) => amount > 0)
-      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('xch', treeToMojo(amount))),
+      .map(({ amount }) => fungibleAssetFromAssetIdAndAmount('tree111', treeToMojo(amount))),
     ...(offeredTokens ?? [])
       .filter(({ assetId, amount }) => assetId?.length > 0 && amount > 0)
       .map(({ amount, assetId }) => fungibleAssetFromAssetIdAndAmount(assetId, catToMojo(amount))),

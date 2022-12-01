@@ -243,7 +243,7 @@ async function postToOfferBin(offerData: string, sharePrivately: boolean, testne
 
 enum HashgreenErrorCodes {
   OFFERED_AMOUNT_TOO_SMALL = 40020, // The offered amount is too small
-  MARKET_NOT_FOUND = 50029, // Pairing doesn't exist e.g. XCH/RandoCoin
+  MARKET_NOT_FOUND = 50029, // Pairing doesn't exist e.g. TREE111/RandoCoin
   OFFER_FILE_EXISTS = 50037, // Offer already shared
   COINS_ALREADY_COMMITTED = 50041, // Coins in the offer are already committed in another offer
 }
@@ -329,7 +329,7 @@ async function postToSpacescan(offerData: string, testnet: boolean): Promise<str
     protocol: 'https:',
     hostname: 'api2.spacescan.io',
     port: 443,
-    path: `/api/offer/upload?coin=${testnet ? 'txch' : 'xch'}&version=1`,
+    path: `/api/offer/upload?coin=${testnet ? 'ttree111' : 'tree111'}&version=1`,
   };
   const requestHeaders = {
     'Content-Type': 'application/json',
@@ -355,7 +355,7 @@ async function postToSpacescan(offerData: string, testnet: boolean): Promise<str
     offer: { id },
   }: PostToSpacescanResponse = JSON.parse(responseBody);
 
-  return `https://www.spacescan.io/${testnet ? 'txch' : 'xch'}/offer/${id}`;
+  return `https://www.spacescan.io/${testnet ? 'ttree111' : 'tree111'}/offer/${id}`;
 }
 
 enum KeybaseCLIActions {
@@ -918,7 +918,7 @@ function OfferShareKeybaseDialog(props: OfferShareServiceDialogProps) {
   const [isSubmitting, setIsSubmitting] = React.useState(false);
   const [isJoiningTeam, setIsJoiningTeam] = React.useState(false);
   const [shared, setShared] = React.useState(false);
-  const teamName = testnet ? 'testxchoffersdev' : KeybaseTeamName;
+  const teamName = testnet ? 'testtree111offersdev' : KeybaseTeamName;
   const channelName = testnet ? 'offers' : KeybaseChannelName;
 
   function handleClose() {

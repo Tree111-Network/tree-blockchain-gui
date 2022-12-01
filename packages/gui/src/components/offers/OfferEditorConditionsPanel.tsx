@@ -385,7 +385,7 @@ function OfferEditorConditionsPanel(props: OfferEditorConditionsPanelProps) {
             <TooltipIcon>
               <Trans>
                 Including a fee in the offer can help expedite the transaction when the offer is accepted. The
-                recommended minimum fee is 0.000005 XCH (5,000,000 mojos)
+                recommended minimum fee is 0.000005 TREE111 (5,000,000 mojos)
               </Trans>
             </TooltipIcon>
           </Box>

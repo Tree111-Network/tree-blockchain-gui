@@ -9,7 +9,7 @@ import OfferBuilderFeeSection from './OfferBuilderFeeSection';
 import OfferBuilderHeader from './OfferBuilderHeader';
 import OfferBuilderNFTSection from './OfferBuilderNFTSection';
 import OfferBuilderTokensSection from './OfferBuilderTokensSection';
-import OfferBuilderXCHSection from './OfferBuilderXCHSection';
+import OfferBuilderTREE111Section from './OfferBuilderTREE111Section';
 
 function getTitle(offering = false, viewer = false, isMyOffer = false) {
   if (isMyOffer) {
@@ -70,8 +70,8 @@ export default function OfferBuilderTradeColumn(props: OfferBuilderTradeColumnPr
   const { name, offering = false, viewer = false, isMyOffer = false } = props;
   const { readOnly } = useOfferBuilderContext();
 
-  const xch = useWatch({
-    name: `${name}.xch`,
+  const tree111 = useWatch({
+    name: `${name}.tree111`,
   });
 
   const nfts = useWatch({
@@ -82,14 +82,14 @@ export default function OfferBuilderTradeColumn(props: OfferBuilderTradeColumnPr
     name: `${name}.tokens`,
   });
 
-  const showXCH = !readOnly || !!xch.length;
+  const showTREE111 = !readOnly || !!tree111.length;
   const showTokensSection = !readOnly || !!tokens.length;
   const showNFTSection = !readOnly || !!nfts.length;
   const showFeeSection = offering || viewer;
 
-  const mutedXCH = nfts.length || tokens.length;
-  const mutedTokens = xch.length || nfts.length;
-  const mutedNFTs = xch.length || tokens.length;
+  const mutedTREE111 = nfts.length || tokens.length;
+  const mutedTokens = tree111.length || nfts.length;
+  const mutedNFTs = tree111.length || tokens.length;
 
   return (
     <Flex flexDirection="column" gap={3}>
@@ -110,7 +110,7 @@ export default function OfferBuilderTradeColumn(props: OfferBuilderTradeColumnPr
           padding: 1,
         }}
       >
-        {showXCH && <OfferBuilderXCHSection name={`${name}.xch`} offering={offering} muted={mutedXCH} />}
+        {showTREE111 && <OfferBuilderTREE111Section name={`${name}.tree111`} offering={offering} muted={mutedTREE111} />}
 
         {showTokensSection && (
           <OfferBuilderTokensSection name={`${name}.tokens`} offering={offering} muted={mutedTokens} />

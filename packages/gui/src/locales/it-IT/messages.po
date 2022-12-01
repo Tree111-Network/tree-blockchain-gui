@@ -39,8 +39,8 @@ msgid "+ Add a Plot"
 msgstr "+ Aggiungi un Plot"
 
 #: src/components/settings/ProfileAdd.tsx:91
-msgid "<0>Need some XCH?</0>"
-msgstr "<0>Hai bisogno di XCH?</0>"
+msgid "<0>Need some TREE111?</0>"
+msgstr "<0>Hai bisogno di TREE111?</0>"
 
 #: src/components/settings/ProfileAdd.tsx:99
 msgid "<0>Use one (1) mojo to create a Profile.</0>"
@@ -215,8 +215,8 @@ msgid "Backup file is used to restore smart wallets."
 msgstr "Il file di backup viene usato per ripristinare gli smart wallet."
 
 #: src/components/settings/ProfileAdd.tsx:103
-msgid "Balance: {standardBalance} XCH"
-msgstr "Saldo: {standardBalance} XCH"
+msgid "Balance: {standardBalance} TREE111"
+msgstr "Saldo: {standardBalance} TREE111"
 
 #: src/components/block/Block.jsx:276
 msgid "Base Farmer Reward Amount"
@@ -579,8 +579,8 @@ msgid "Create an Offer"
 msgstr "Crea un Offerta"
 
 #: src/components/offers/OfferManager.tsx:559
-msgid "Create an offer to exchange assets including XCH, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
-msgstr "Crea un'offerta per scambiare XCH, altri token o NFT. Carica un offer file per ispezionare e accettare un'offerta fatta da un'altro utente."
+msgid "Create an offer to exchange assets including TREE111, tokens, and NFTs. View an offer to inspect and accept an offer made by another party."
+msgstr "Crea un'offerta per scambiare TREE111, altri token o NFT. Carica un offer file per ispezionare e accettare un'offerta fatta da un'altro utente."
 
 #: src/components/offers/OfferManager.tsx:152
 msgid "Creates and submits a transaction on the blockchain that cancels the offer"
@@ -1189,7 +1189,7 @@ msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:102
 #: src/components/offers/OfferEditorConditionsPanel.tsx:463
-msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 XCH (5,000,000 mojos)"
+msgid "Including a fee in the offer can help expedite the transaction when the offer is accepted. The recommended minimum fee is 0.000005 TREE111 (5,000,000 mojos)"
 msgstr ""
 
 #: src/components/farm/FarmLatestBlockChallenges.tsx:19
@@ -1239,16 +1239,16 @@ msgid "Join a Pool"
 msgstr "Unisciti ad una Pool"
 
 #: src/components/plot/add/PlotAddNFT.tsx:49
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile."
-msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in XCH. I rendimenti medi sono gli stessi, ma sono molto meno volatili."
+msgid "Join a pool and get consistent TREE111 farming rewards. The average returns are the same, but it is much less volatile."
+msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in TREE111. I rendimenti medi sono gli stessi, ma sono molto meno volatili."
 
 #: src/components/plotNFT/PlotNFTAdd.tsx:63
-msgid "Join a pool and get consistent XCH farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
-msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in XCH. I rendimenti medi sono gli stessi, ma sono molto meno volatili. Assegna dei plot ad un pool NFT. È possibile cambiare facilmente pool senza dover ri-plottare."
+msgid "Join a pool and get consistent TREE111 farming rewards. The average returns are the same, but it is much less volatile. Assign plots to a plot NFT. You can easily switch pools without having to re-plot."
+msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in TREE111. I rendimenti medi sono gli stessi, ma sono molto meno volatili. Assegna dei plot ad un pool NFT. È possibile cambiare facilmente pool senza dover ri-plottare."
 
 #: src/components/plot/add/PlotAddNFT.tsx:138
-msgid "Join a pool and get more consistent XCH farming rewards. Create a plot NFT and assign your new plots to a group."
-msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in XCH. Crea un plot NFT e assegna i tuoi nuovi plot ad un gruppo."
+msgid "Join a pool and get more consistent TREE111 farming rewards. Create a plot NFT and assign your new plots to a group."
+msgstr "Unisciti a una pool e ottieni ricompense continue per il farming in TREE111. Crea un plot NFT e assegna i tuoi nuovi plot ad un gruppo."
 
 #: src/components/app/AppSelectMode.tsx:143
 msgid "Join farming pools"
@@ -1528,8 +1528,8 @@ msgid "NFT details not available"
 msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:256
-#~ msgid "NFT for XCH"
-#~ msgstr "NFT for XCH"
+#~ msgid "NFT for TREE111"
+#~ msgstr "NFT for TREE111"
 
 #: src/components/offers/NFTOfferPreview.tsx:56
 msgid "NFT identifier does not reference a valid NFT coin."
@@ -1644,8 +1644,8 @@ msgstr "Non connesso"
 
 #: src/components/block/FarmManageFarmingRewards.tsx:163
 #: src/components/farm/FarmManageFarmingRewards.tsx:176
-msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25XCH reward for pooling plots."
-msgstr "Nota che questo non cambia gli indirizzi di pagamento del pooling. Questo influenza solo i vecchi plot col vecchio formato, e la ricompensa di 0.25XCH per il pooling dei plot."
+msgid "Note that this does not change your pooling payout addresses. This only affects old format plots, and the 0.25TREE111 reward for pooling plots."
+msgstr "Nota che questo non cambia gli indirizzi di pagamento del pooling. Questo influenza solo i vecchi plot col vecchio formato, e la ricompensa di 0.25TREE111 per il pooling dei plot."
 
 #: src/components/plotNFT/PlotExternalNFTCard.tsx:119
 #: src/components/plotNFT/PlotNFTCard.tsx:161
@@ -2206,7 +2206,7 @@ msgid "Recommended"
 msgstr "Raccomandato"
 
 #: src/components/settings/ProfileAdd.tsx:118
-msgid "Recommended: 0.000005 XCH"
+msgid "Recommended: 0.000005 TREE111"
 msgstr ""
 
 #: src/components/plot/PlotHeader.tsx:63
@@ -2355,8 +2355,8 @@ msgid "Self Pooling"
 msgstr "Self Pooling"
 
 #: src/components/plotNFT/select/PlotNFTSelectBase.tsx:104
-msgid "Self pool. When you win a block you will earn XCH rewards."
-msgstr "Self pool. Quando vinci un blocco, guadagnerai ricompense in XCH."
+msgid "Self pool. When you win a block you will earn TREE111 rewards."
+msgstr "Self pool. Quando vinci un blocco, guadagnerai ricompense in TREE111."
 
 #: src/components/offers/NFTOfferEditor.tsx:367
 msgid "Sell an NFT"
@@ -2454,8 +2454,8 @@ msgid "Skips adding a final directory to harvester for farming"
 msgstr "Salta l'aggiunta di una cartella finale all'harvester per il farming"
 
 #: src/components/pool/PoolHero.tsx:21
-msgid "Smooth out your XCH farming rewards by joining a pool."
-msgstr "Riduci la fluttuazione nelle tue ricompense in XCH da farming unendoti ad una piscina."
+msgid "Smooth out your TREE111 farming rewards by joining a pool."
+msgstr "Riduci la fluttuazione nelle tue ricompense in TREE111 da farming unendoti ad una piscina."
 
 #: src/components/offers/OfferShareDialog.tsx:964
 msgid "Spacescan.io URL"
@@ -2496,8 +2496,8 @@ msgid "Status"
 msgstr "Stato"
 
 #: src/components/app/AppSelectMode.tsx:84
-msgid "Store and Send XCH"
-msgstr "Salva e invia XCH"
+msgid "Store and Send TREE111"
+msgstr "Salva e invia TREE111"
 
 #: src/components/app/AppPassPrompt.tsx:114
 msgid "Submit"
@@ -2564,7 +2564,7 @@ msgid "The NFT transfer transaction has been successfully submitted to the block
 msgstr ""
 
 #: src/components/settings/SettingsPanel.tsx:182
-msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for XCH, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
+msgid "The derivation index sets the range of wallet addresses that the wallet scans the blockchain for. This number is generally higher if you have a lot of transactions or canceled offers for TREE111, CATs, or NFTs. If you believe your balance is incorrect because it’s missing coins, then increasing the derivation index could help the wallet include the missing coins in the balance total."
 msgstr ""
 
 #: src/components/plot/add/PlotAddSelectTemporaryDirectory.tsx:105
@@ -2643,8 +2643,8 @@ msgid "The total transactions fees in this block. Rewarded to the farmer."
 msgstr "Il totale delle tasse di transazione in questo blocco. Date come ricompensa al coltivatore."
 
 #: src/components/plotNFT/PlotNFTPayoutInstructionsDialog.tsx:106
-msgid "These are the instructions for how the farmer wants to get paid. By default this will be an XCH address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
-msgstr "Queste sono le istruzioni per il modo in cui il farmer vuole farsi pagare. Per impostazione predefinita questo sarà un indirizzo XCH, ma può essere impostato su qualsiasi stringa con una dimensione inferiore a 1024 caratteri, in modo che possa rappresentare un altro identificatore blockchain o sistema di pagamento."
+msgid "These are the instructions for how the farmer wants to get paid. By default this will be an TREE111 address, but it can be set to any string with a size of less than 1024 characters, so it can represent another blockchain or payment system identifier."
+msgstr "Queste sono le istruzioni per il modo in cui il farmer vuole farsi pagare. Per impostazione predefinita questo sarà un indirizzo TREE111, ma può essere impostato su qualsiasi stringa con una dimensione inferiore a 1024 caratteri, in modo che possa rappresentare un altro identificatore blockchain o sistema di pagamento."
 
 #: src/components/plot/card/PlotCardPlotsFailedToOpen.tsx:15
 msgid "These plots are invalid, you might want to delete them."
@@ -3037,8 +3037,8 @@ msgid "Would you like to transfer the specified NFT to a new owner?"
 msgstr ""
 
 #: src/components/offers/NFTOfferEditor.tsx:261
-#~ msgid "XCH for NFT"
-#~ msgstr "XCH for NFT"
+#~ msgid "TREE111 for NFT"
+#~ msgstr "TREE111 for NFT"
 
 #: src/components/plot/add/PlotAddChooseSize.tsx:48
 #: src/electron/main.tsx:385
