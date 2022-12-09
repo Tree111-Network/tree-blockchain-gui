@@ -195,6 +195,7 @@ export default function WalletSend(props: SendCardProps) {
                 color="secondary"
                 disabled={isSubmitting}
                 label={<Trans>Fee</Trans>}
+                defaultValue="0.05"
                 data-testid="WalletSend-fee"
                 fullWidth
                 txType="walletSendTREE111"

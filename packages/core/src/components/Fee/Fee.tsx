@@ -21,7 +21,7 @@ export default function Fee(props: FeeProps) {
     <Amount {...props}>
       {({ value, mojo }) => {
         const isHigh = mojo.gte('100000000000');
-        const isLow = mojo.gt('0') && mojo.lt('1');
+        const isLow = mojo.gt('0') && mojo.lt('50000000000');
 
         if (!value) {
           return;
@@ -38,7 +38,7 @@ export default function Fee(props: FeeProps) {
         if (isLow) {
           return (
             <StyledError>
-              <Trans>Incorrect value</Trans>
+              <Trans>Minimum fee is 0.05</Trans>
             </StyledError>
           );
         }
